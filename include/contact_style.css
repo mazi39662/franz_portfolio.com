@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(190, 221, 255);
+  background-image: url("../images/2.png");
+  background-size: auto;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 0 0 100px 100px;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.603);
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: #494949;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 10% 0 10%;
+  border-radius: 10px;
+  width: 400px;
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav ul li a i {
+  font-size: 30px;
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover:before {
+  transform: scaleX(1);
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: rgb(121, 197, 248);
+}
+
+.logo {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+.logo a h1 {
+  font-family: "Segoe Script";
+}
+
+.form-container {
+    background-color: rgb(190, 221, 255);
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgb(228, 240, 253);;
+    padding: 40px;
+    width: 700px;
+    margin-top: 100px;
+    animation-name: border-radius-animation2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+    border: 5px solid#dbf3ff;
+}
+
+.img_2 {
+  width: 200px;
+  height: 200px;
+  border-bottom: 5px solid whitesmoke;
+  animation-name: border-radius-animation2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.img-container h2 {
+  font-size: 18px;
+  width: 400px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+#contact {
+  color: #fff;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact-box-left {
+  margin: 0 10px;
+}
+
+.contact-box-right {
+  margin: 0 10px;
+}
+
+#contact ul {
+  background-color: #494949;
+  height: 80px;
+  width: 500px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.603);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact ul li {
+  list-style-type: none;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+}
+
+#contact p {
+  font-family: "Calibri";
+  background-color: #494949;
+  height: 60px;
+  width: 500px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.603);
+}
+
+.technology-container .section-heading {
+  font-family: "Calibri";
+  font-size: 40px;
+}
+
+.technology-container {
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+}
+
+li i {
+  font-size: 20px;
+}
+
+@keyframes border-radius-animation2 {
+  0% {
+    border-radius: 50px 100px 100px 100px;
+  }
+  25% {
+      border-radius: 100px 50px 100px 100px;
+  }
+  50%{
+      border-radius: 100px 100px 50px 100px;
+  }
+  75%{
+      border-radius: 100px 100px 100px 50px;
+  }
+  100% {
+    border-radius: 50px 100px 100px 100px;
+  }
+}
