@@ -469,11 +469,18 @@ nav ul li a:hover {
     .about-container p {
         font-size: 16px;
     }
+    .other-container{
+        width: 100%;
+        margin: 0;
+    }
+    .img-box1 {
+        margin: 0px;
+    }
     .img-box2 {
         border: 3px solid black;
         width: 380px;
         height: 250px;
-        margin: 30px;
+        margin: 0px;
         border: 5px solid #dbf3ff;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.541),
                     0 -10px 10px rgba(0, 0, 0, 0.541);
@@ -506,8 +513,8 @@ nav ul li a:hover {
     }
 
     #contact ul {
-        height: 80px;
-        width: 500px;
+        height: 90px;
+        width: fit-content;
         border-radius: 20px;
         display: flex;
         justify-content: center;
