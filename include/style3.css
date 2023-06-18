@@ -9,20 +9,42 @@ body {
     background-blend-mode:soft-light;
 }
 
-body div {
+/* body div {
     background-image: url('../images/image_2.png');
     background-repeat: no-repeat;
     background-size:contain;
     background-position: right;
+} */
+
+body div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img-container {
+    float: right;
+}
+
+.img-container img {
+    width: 600px;
+    height: 600px;
+    border-bottom: 5px solid whitesmoke;
+    animation-name: border-radius-animation2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
 }
 
 nav {
-    height: 100vh;
-    width:fit-content;
+    
     display: flex;
     justify-content:left;
     align-items: center;
     margin: 0 0 0 10%;
+    height: 100vh;
 }
 
 nav ul {
@@ -33,7 +55,7 @@ nav ul {
 
 nav ul li {
     margin: 0 0;
-    width: 400px;
+    width: fit-content;
 }
 
 nav ul li a {
@@ -66,17 +88,71 @@ nav ul li a:hover span {
     display: none;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 @media only screen and (max-device-width: 480px) {
+    body div {
+        flex-direction: column;
+    }
     nav {
-        height: 100vh;
         width:fit-content;
+        margin: 100px 0 0 0;
+        height: 30px;
+    }
+    nav ul {
         display: flex;
-        justify-content:baseline;
-        align-items: center;
-        margin: 0;
+        justify-content:space-around;
+        align-items:center;
+        flex-direction: row;
+        width: 100vw;
+        position: relative;
+        top: -35%;
+    }
+
+    nav ul li {
+        width: fit-content;
     }
     
     nav ul li a {
-        font-size: 120px;
+        font-size: 50px;
+    }
+    .hide {
+        visibility: visible;
+        width: 100vw;
+        text-align: center;
+    }
+    .hide p {
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .img-container img {
+        width: 390px;
+        height: 390px;
+        border-bottom: 5px solid whitesmoke;
+        animation-name: border-radius-animation2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        overflow: hidden;
     }
  }
+
+ @keyframes border-radius-animation2 {
+    0% {
+      border-radius: 50px 100px 100px 100px;
+    }
+    25% {
+        border-radius: 100px 50px 100px 100px;
+    }
+    50%{
+        border-radius: 100px 100px 50px 100px;
+    }
+    75%{
+        border-radius: 100px 100px 100px 50px;
+    }
+    100% {
+      border-radius: 50px 100px 100px 100px;
+    }
+  }

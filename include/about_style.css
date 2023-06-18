@@ -438,6 +438,96 @@ nav ul li a:hover {
     border: 5px solid #585858;
 }
 
+@media only screen and (max-device-width: 480px) {
+    #about {
+        padding: 0 10px;
+        height: 40vh;
+    }
+    .form-container {
+        background-color: rgb(190, 221, 255);
+        border-radius: 40px;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgb(228, 240, 253);
+        padding: 40px 30px;
+        width: 95vw;
+        margin-top: 100px;
+        animation-name: border-radius-animation2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        overflow: hidden;
+        border: 5px solid#dbf3ff;
+    }
+    .img_det-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img_2 {
+        margin: 0;
+    }
+    .about-container p {
+        font-size: 16px;
+    }
+    .img-box2 {
+        border: 3px solid black;
+        width: 380px;
+        height: 250px;
+        margin: 30px;
+        border: 5px solid #dbf3ff;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.541),
+                    0 -10px 10px rgba(0, 0, 0, 0.541);
+        border-radius: 50px;
+        overflow: hidden;
+        margin-bottom: 130px; 
+        transition: .7s ease-in-out;
+    }
+    .images-container .img-box2 img {
+        width: 380px;
+        height: 250px;
+    }
+    
+    #contact {
+        border-radius: 30% 30% 0 0;
+        width: 100vw;
+        height: 270px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #contact ul {
+        height: 80px;
+        width: 500px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contact p {
+        height: 60px;
+        width:fit-content;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+    }
+}
+
 @keyframes border-radius-animation {
     0% {
       border-radius: 30% 100% 100% 100%;

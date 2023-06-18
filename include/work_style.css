@@ -345,6 +345,92 @@ nav ul li a:hover {
     border: 5px solid #585858;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .work-container {
+        width: fit-content;
+    } 
+    .work-container h1 {
+        padding: 10px 20px;
+        font-family: "Segoe Script";
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.541),
+                    0 -10px 10px rgba(0, 0, 0, 0.541);
+        margin: 0 0 30px 0;
+        background-color: #333;
+        border-radius: 20px;
+        border: 5px solid #585858;
+        color: rgb(190, 221, 255);
+        font-size: 24px;
+    }
+    .images-container p {
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+    .img-box2 {
+        width: 380px;
+        height: 230px;
+    }
+    .images-container .img-box2 a img {
+        width: 380px;
+        height: 230px;
+    }
+    .content-container {
+        padding: 0 10px;
+        height: 40vh;
+    }
+    .technology-container h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .tech-box a {
+        font-size: 50px;
+    }
+    .tech-box {
+        text-align: center;
+    }
+
+    #contact {
+        border-radius: 30% 30% 0 0;
+        width: 100vw;
+        height: 270px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #contact ul {
+        height: 80px;
+        width: 500px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contact p {
+        height: 60px;
+        width:fit-content;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+    }
+    
+}
+
 
 @keyframes border-radius-animation2 {
     0% {
