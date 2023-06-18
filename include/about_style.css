@@ -38,7 +38,6 @@ nav {
     margin: 0 10% 0 10%;
     border-radius: 10px;
     width: 400px;
-    
 }
 
 nav ul {
@@ -202,49 +201,66 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .img-box1 {
     border: 3px solid black;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin: 30px;
     border: 5px solid #dbf3ff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.541),
                 0 -10px 10px rgba(0, 0, 0, 0.541);
     border-radius: 50px;
     overflow: hidden;
+    transition: .5s ease-in-out;
 }
+
 .img-box2 {
     border: 3px solid black;
-    width: 430px;
-    height: 300px;
+    width: 450px;
+    height: 320px;
     margin: 30px;
     border: 5px solid #dbf3ff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.541),
                 0 -10px 10px rgba(0, 0, 0, 0.541);
     border-radius: 50px;
     overflow: hidden;
-    margin-bottom: 130px;
+    margin-bottom: 130px; 
+    transition: .7s ease-in-out;
 }
 
 .images-container .img-box1 img {
-    width: 290px;
-    height: 290px;
+    width: 340px;
+    height: 340px;
+    transition: .5 ease-in-out;
 }
 
 .images-container .img-box2 img {
-    width: 420px;
-    height: 300px;
+    width: 450px;
+    height: 320px;
 }
+
+.img-box1:hover {
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgb(0, 0, 0),
+                0 -10px 10px rgba(0, 0, 0, 0.459);
+}
+
+.img-box2:hover {
+    border-radius: 80px;
+    box-shadow: 0 10px 10px rgb(0, 0, 0),
+                0 -10px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 .video-container {
     width: 340px;
     height: 800px;
     margin: 20px 40px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.541),
-    0 -10px 10px rgba(0, 0, 0, 0.541);
+    box-shadow: 0 10px 10px rgb(190, 221, 255),
+    0 -10px 10px rgb(190, 221, 255);
     border-radius: 100px;
     overflow: hidden;
     background-color: white;
