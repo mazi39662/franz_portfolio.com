@@ -474,13 +474,13 @@ nav ul li a:hover {
         margin: 0;
     }
     .img-box1 {
-        margin: 0px;
+        margin: 30px 0;
     }
     .img-box2 {
         border: 3px solid black;
         width: 380px;
         height: 250px;
-        margin: 0px;
+        margin: 30px 0;
         border: 5px solid #dbf3ff;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.541),
                     0 -10px 10px rgba(0, 0, 0, 0.541);
