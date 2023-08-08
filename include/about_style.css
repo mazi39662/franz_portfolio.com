@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
 * {
     margin: 0;
     padding: 0;
@@ -381,15 +383,15 @@ nav ul li a:hover {
 }
 
 #home h1 {
-    font-size: 40px;
+    font-size: 20px;
     background-color: rgb(190, 221, 255);
     border-radius: 20px 20px 0 0;
-    font-family: "Impact";
+    font-family: "Bowlby One SC", cursive;
 }
 
 #home h1 strong {
     color: rgb(243, 72, 72);
-    font-family: "Impact";
+    font-family: "Bowlby One SC", cursive;
 }
 
 #home p {
