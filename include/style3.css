@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
 body {
     margin: 0;
     padding: 0;
@@ -57,7 +59,8 @@ nav ul li a {
     text-align: center;
     transition: all 0.3s ease-in-out;
     position: relative;
-    font-family: Impact, Charcoal, sans-serif;
+    #font-family: Impact, Charcoal, sans-serif;
+    font-family: "Bowlby One SC", cursive;
 }
 
 nav ul li a:hover {
