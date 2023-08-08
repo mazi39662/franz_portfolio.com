@@ -383,7 +383,7 @@ nav ul li a:hover {
 }
 
 #home h1 {
-    font-size: 20px;
+    font-size: 40px;
     background-color: rgb(190, 221, 255);
     border-radius: 20px 20px 0 0;
     font-family: "Bowlby One SC", cursive;
@@ -452,6 +452,9 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-device-width: 480px) {
+    #home h1 {
+    font-size: 25px;
+    }
     #about {
         padding: 0 10px;
         height: 40vh;
