@@ -59,7 +59,7 @@ nav ul li a {
     text-align: center;
     transition: all 0.3s ease-in-out;
     position: relative;
-    #font-family: Impact, Charcoal, sans-serif;
+/*     font-family: Impact, Charcoal, sans-serif; */
     font-family: "Bowlby One SC", cursive;
 }
 
@@ -112,7 +112,6 @@ nav ul li a:hover span {
     
     nav ul li a {
         font-size: 50px;
-        font-family: Impact, Charcoal, sans-serif;
     }
     .hide {
         visibility: visible;
