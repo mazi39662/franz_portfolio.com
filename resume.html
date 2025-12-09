@@ -1,34 +1,459 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="include/style2.css">
+    <title>Resume - Terence Franz Indenerio</title>
+    <link rel="stylesheet" href="include/resume_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/287833829f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h2>Resume</h2>
+    <!-- Newspaper Header -->
+    <header class="newspaper-header">
+        <div class="header-top">
+            <div class="edition-info">Vol. 2025 • Issue #001</div>
+            <div class="date-info" id="currentDate"></div>
+        </div>
+        <div class="masthead">
+            <h1 class="newspaper-title">THE PORTFOLIO CHRONICLE</h1>
+            <p class="tagline">All the Code That's Fit to Print</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="work.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="resume.html" class="active">RESUME</a></li>
+            </ul>
         </nav>
+        <div class="header-line"></div>
     </header>
 
-    <section id="about">
-        <h1>Terence Franz Indenerio</h1>
-        <p>Web Developer</p>
-        <a href="home.html" class="cta-button">Learn More</a>
-        <h2 class="section-heading">About Me</h2>
-        <p class="section-content">I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I have experience in building responsive and user-friendly websites. I enjoy creating elegant and efficient solutions to complex problems. Browse through my portfolio to see some of my projects.</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="headline-box">
+                <span class="breaking-news">PROFESSIONAL PROFILE</span>
+                <h1 class="main-headline">Curriculum Vitae</h1>
+                <p class="subheadline">Terence Franz Indenerio - Full Stack Developer</p>
+                <div class="byline">
+                    <span>Professional Documentation</span>
+                    <span class="separator">|</span>
+                    <span id="publishDate"></span>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2 class="section-heading">Contact Me</h2>
-        <p class="section-content">I would love to hear from you. Feel free to reach out to me using the contact information below:</p>
-        <ul class="section-content">
-            <li>Email: example@example.com</li>
-            <li>Phone: 123-456-7890</li>
-        </ul>
-    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Profile Header -->
+            <section class="profile-header">
+                <div class="profile-layout">
+                    <div class="profile-info">
+                        <h2 class="profile-name">Terence Franz Indenerio</h2>
+                        <p class="profile-title">Full Stack Developer & Software Engineer</p>
+                        <p class="profile-tagline">
+                            Versatile developer with expertise in Mobile App Development, Web Development,
+                            Python Programming, Game Development, and UI/UX Design
+                        </p>
+                    </div>
+                    <div class="profile-actions">
+                        <a href="https://drive.google.com/file/d/1EhLuDLgM8TIWv736fSBsHRH1q0yz7tM9/view?usp=sharing"
+                            target="_blank" class="btn-download">
+                            <i class="fa-solid fa-download"></i> Download PDF
+                        </a>
+                        <a href="contact.html" class="btn-contact">
+                            <i class="fa-solid fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resume Content -->
+            <div class="resume-layout">
+
+                <!-- Left Column -->
+                <aside class="resume-sidebar">
+
+                    <!-- Contact Information -->
+                    <section class="sidebar-section">
+                        <h3 class="sidebar-title">Contact</h3>
+                        <div class="sidebar-content">
+                            <div class="contact-detail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>mazi39662@gmail.com</span>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+639771043990</span>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>@Franz.Ocubillo</span>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fa-brands fa-telegram"></i>
+                                <span>@W4k1La</span>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>@waki_w4k1</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Skills -->
+                    <section class="sidebar-section">
+                        <h3 class="sidebar-title">Technical Skills</h3>
+                        <div class="sidebar-content">
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-mobile-screen-button"></i> Mobile Development</h4>
+                                <ul class="skill-list">
+                                    <li>Vue.js</li>
+                                    <li>Ionic Framework</li>
+                                    <li>TypeScript</li>
+                                    <li>Mobile App Development</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-code"></i> Web Development</h4>
+                                <ul class="skill-list">
+                                    <li>HTML5 & CSS3</li>
+                                    <li>JavaScript (ES6+)</li>
+                                    <li>PHP</li>
+                                    <li>MySQL</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fa-brands fa-python"></i> Python & Frameworks</h4>
+                                <ul class="skill-list">
+                                    <li>Python</li>
+                                    <li>Web2py Framework</li>
+                                    <li>Backend Development</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-pen-nib"></i> UI/UX Design</h4>
+                                <ul class="skill-list">
+                                    <li>Figma</li>
+                                    <li>Bootstrap</li>
+                                    <li>UI Implementation</li>
+                                    <li>User Experience</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-gamepad"></i> Game Development</h4>
+                                <ul class="skill-list">
+                                    <li>GODOT Engine</li>
+                                    <li>GDScript</li>
+                                    <li>Mobile Games</li>
+                                    <li>Game Design</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-palette"></i> Creative Skills</h4>
+                                <ul class="skill-list">
+                                    <li>Digital Painting</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Illustration</li>
+                                    <li>Drawing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Interests -->
+                    <section class="sidebar-section">
+                        <h3 class="sidebar-title">Interests</h3>
+                        <div class="sidebar-content">
+                            <ul class="interest-list">
+                                <li><i class="fa-solid fa-code"></i> Coding & Programming</li>
+                                <li><i class="fa-solid fa-palette"></i> Digital Painting</li>
+                                <li><i class="fa-solid fa-gamepad"></i> Game Development</li>
+                                <li><i class="fa-solid fa-mobile"></i> Mobile Gaming</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </aside>
+
+                <!-- Right Column -->
+                <main class="resume-main">
+
+                    <!-- Professional Summary -->
+                    <section class="resume-section">
+                        <h3 class="section-title">Professional Summary</h3>
+                        <div class="section-content">
+                            <p>
+                                Versatile Full Stack Developer with comprehensive expertise in Mobile App Development
+                                (Vue, Ionic, TypeScript),
+                                Web Development (HTML, CSS, JavaScript, PHP, MySQL), Python & Web2py Development, Mobile
+                                Game Development,
+                                and UI/UX Implementation (Figma, Bootstrap). Experienced in delivering custom
+                                programming projects including
+                                activities, assignments, and commissions. Passionate about creating elegant solutions
+                                and bringing creative
+                                ideas to life through code and digital art.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Education -->
+                    <section class="resume-section">
+                        <h3 class="section-title">Education</h3>
+                        <div class="section-content">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Bachelor of Science in Information Technology</h4>
+                                    <p class="timeline-institution">Palompon Institute of Technology</p>
+                                    <p class="timeline-date">Graduated: 2023</p>
+                                    <p class="timeline-description">
+                                        Completed comprehensive coursework in software development, web technologies,
+                                        database management, and system analysis. Developed strong foundation in
+                                        programming
+                                        principles and practical application of technology solutions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Projects Built -->
+                    <section class="resume-section">
+                        <h3 class="section-title">Projects Built</h3>
+                        <div class="section-content">
+                            <div class="projects-built-grid">
+
+                                <!-- Project Card 1 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-list-check"></i>
+                                    </div>
+                                    <h4 class="project-built-name">Manager & Team Leader's Checklist System</h4>
+                                    <p class="project-built-tech">Web2py • Python • MySQL</p>
+                                    <a href="#" class="project-link">View Project →</a>
+                                </div>
+
+                                <!-- Project Card 2 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-building"></i>
+                                    </div>
+                                    <h4 class="project-built-name">Rental Management System</h4>
+                                    <p class="project-built-tech">Web Development • Database</p>
+                                    <a href="https://wjvsystems-wjvcompany.pythonanywhere.com/rentals/default/index"
+                                        target="_blank" class="project-link">View Project →</a>
+                                </div>
+
+                                <!-- Project Card 3 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-shirt"></i>
+                                    </div>
+                                    <h4 class="project-built-name">Ukay-ukay Inventory</h4>
+                                    <p class="project-built-tech">Inventory Management • Web App</p>
+                                    <a href="#" class="project-link">View Project →</a>
+                                </div>
+
+                                <!-- Project Card 4 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-boxes-stacked"></i>
+                                    </div>
+                                    <h4 class="project-built-name">Inventory Management System</h4>
+                                    <p class="project-built-tech">Full Stack • Real-time Tracking</p>
+                                    <a href="#" class="project-link">View Project →</a>
+                                </div>
+
+                                <!-- Project Card 5 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                    </div>
+                                    <h4 class="project-built-name">E-Freight Website</h4>
+                                    <p class="project-built-tech">Web Development • Logistics</p>
+                                    <a href="https://www.e-freightgroup.com/" target="_blank" class="project-link">View
+                                        Project →</a>
+                                </div>
+
+                                <!-- Project Card 6 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-gift"></i>
+                                    </div>
+                                    <h4 class="project-built-name">Gift Voucher Scanner</h4>
+                                    <p class="project-built-tech">Mobile App • QR/Barcode</p>
+                                    <a href="#" class="project-link">View Project →</a>
+                                </div>
+
+                                <!-- Project Card 7 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                    </div>
+                                    <h4 class="project-built-name">HR Vale Mobile (Employee Self Service)</h4>
+                                    <p class="project-built-tech">Vue • Ionic • TypeScript</p>
+                                    <a href="https://play.google.com/store/apps/details?id=com.bapplware.hrvale&pcampaignid=web_share"
+                                        target="_blank" class="project-link">View on Play Store →</a>
+                                </div>
+
+                                <!-- Project Card 8 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-face-smile"></i>
+                                    </div>
+                                    <h4 class="project-built-name">Biometric Face Scanner</h4>
+                                    <p class="project-built-tech">Mobile • Face Recognition • AI</p>
+                                    <a href="#" class="project-link">View Project →</a>
+                                </div>
+
+                                <!-- Project Card 9 -->
+                                <div class="project-built-card">
+                                    <div class="project-icon">
+                                        <i class="fa-brands fa-google-play"></i>
+                                    </div>
+                                    <h4 class="project-built-name">Games In Playstore</h4>
+                                    <p class="project-built-tech">GODOT • GDScript • Mobile Games</p>
+                                    <a href="#" class="project-link">View Project →</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Experience -->
+                    <section class="resume-section">
+                        <h3 class="section-title">Professional Experience</h3>
+                        <div class="section-content">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Software Engineer</h4>
+                                    <p class="timeline-institution">BAPPLWARE</p>
+                                    <ul class="timeline-list">
+                                        <li>Build and develop mobile applications</li>
+                                        <li>Work with designs in Figma</li>
+                                        <li>Integrate data from the back-end via API</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Full Stack Developer</h4>
+                                    <p class="timeline-institution">WJV</p>
+                                    <ul class="timeline-list">
+                                        <li>Develop mobile and web applications for internal challenges</li>
+                                        <li>Create solutions to reduce manual tasks and enhance efficiency</li>
+                                        <li>Implement systems to strengthen operational and data security</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Web Developer</h4>
+                                    <p class="timeline-institution">E-FREIGHT SOLUTIONS INC.</p>
+                                    <ul class="timeline-list">
+                                        <li>Build and maintain websites using WordPress</li>
+                                        <li>Integrate AI chatbots to handle FAQs and provide quick, automated responses
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Achievements -->
+                    <section class="resume-section">
+                        <h3 class="section-title">Achievements & Recognition</h3>
+                        <div class="section-content">
+                            <ul class="achievement-list">
+                                <li>
+                                    <i class="fa-solid fa-trophy"></i>
+                                    <div>
+                                        <strong>COTE Festival Showcase</strong>
+                                        <p>Selected to showcase game development project representing BSIT program</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <div>
+                                        <strong>BSIT Graduate</strong>
+                                        <p>Successfully completed Bachelor's degree in Information Technology</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-code"></i>
+                                    <div>
+                                        <strong>Multi-Platform Developer</strong>
+                                        <p>Proficient in mobile, web, and game development across multiple platforms</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-google-play"></i>
+                                    <div>
+                                        <strong>Published Game Developer</strong>
+                                        <p>Successfully published games on Google Play Store</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </main>
+
+            </div>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="cta-box">
+                    <h3>INTERESTED IN WORKING TOGETHER?</h3>
+                    <p>Let's discuss how I can contribute to your team or project</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:mazi39662@gmail.com" class="btn-primary">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="work.html" class="btn-secondary">
+                            <i class="fa-solid fa-folder"></i> View Portfolio
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="newspaper-footer">
+        <div class="footer-line"></div>
+        <div class="container">
+            <p class="copyright">© 2025 The Portfolio Chronicle. All rights reserved.</p>
+            <p class="attribution">Terence Franz Indenerio - Full Stack Developer</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current date
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date();
+        document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
+        document.getElementById('publishDate').textContent = today.toLocaleDateString('en-US', options);
+    </script>
 </body>
+
 </html>

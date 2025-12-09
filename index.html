@@ -1,35 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="include/style3.css">
+    <title>The Portfolio Chronicle - Terence Franz Indenerio</title>
+    <link rel="stylesheet" href="include/index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/287833829f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div>
-        <nav>
-            <ul>
-                <li id="about">
-                    <a href="about.html"><span>Hello,</span></a>
-                </li>
-                <li id="work">
-                    <a href="work.html"><span>I am</span></a>
-                </li>
-                <li id="contact">
-                    <a href="contact.html"><span>Franz</span></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="img-container">
-            <img src="images/image_2.png">
-        </div>
+    <!-- Newspaper Background Texture -->
+    <div class="newspaper-texture"></div>
+
+    <!-- Main Container -->
+    <div class="landing-container">
+
+        <!-- Header Masthead -->
+        <header class="masthead">
+            <div class="edition-line">
+                <span class="edition-info">Vol. 2025 • Issue #001</span>
+                <span class="date-info" id="currentDate"></span>
+            </div>
+            <h1 class="newspaper-title">THE PORTFOLIO CHRONICLE</h1>
+            <p class="tagline">All the Code That's Fit to Print</p>
+            <div class="divider-line"></div>
+        </header>
+
+        <!-- Hero Content -->
+        <main class="hero-content">
+            <div class="content-grid">
+
+                <!-- Left Column - Headlines -->
+                <div class="headlines-section">
+                    <div class="breaking-banner">
+                        <span class="breaking-text">BREAKING NEWS</span>
+                    </div>
+
+                    <h2 class="main-headline">
+                        Full Stack Developer<br>
+                        <span class="headline-accent">Ready to Build</span><br>
+                        Your Next Project
+                    </h2>
+
+                    <div class="byline">
+                        <span class="byline-text">By Terence Franz Indenerio</span>
+                        <span class="separator">|</span>
+                        <span class="byline-date" id="publishDate"></span>
+                    </div>
+
+                    <p class="lead-paragraph">
+                        Specializing in Mobile App Development, Web Solutions, and Game Development.
+                        Bringing creative ideas to life through elegant code and innovative design.
+                    </p>
+
+                    <!-- Navigation Links as Article Headlines -->
+                    <nav class="article-links">
+                        <a href="about.html" class="article-link">
+                            <div class="link-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>About the Developer</h3>
+                                <p>Learn more about my journey and expertise</p>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="work.html" class="article-link">
+                            <div class="link-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Portfolio & Projects</h3>
+                                <p>Explore my latest work and achievements</p>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="contact.html" class="article-link">
+                            <div class="link-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Get In Touch</h3>
+                                <p>Let's discuss your next project</p>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="resume.html" class="article-link">
+                            <div class="link-icon">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Professional Resume</h3>
+                                <p>View my complete professional profile</p>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Right Column - Featured Image -->
+                <div class="featured-section">
+                    <div class="featured-image-container">
+                        <div class="image-frame">
+                            <img src="images/image_2.png" alt="Terence Franz Indenerio" class="profile-image">
+                            <div class="image-caption">
+                                <p class="caption-text">Terence Franz Indenerio</p>
+                                <p class="caption-subtitle">Full Stack Developer & Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats Box -->
+                    <div class="stats-box">
+                        <h3 class="stats-title">At a Glance</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <i class="fa-solid fa-code"></i>
+                                <span class="stat-label">Multiple Languages</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span class="stat-label">Mobile Apps</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fa-solid fa-globe"></i>
+                                <span class="stat-label">Web Solutions</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span class="stat-label">Game Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="landing-footer">
+            <div class="footer-line"></div>
+            <p class="footer-text">© 2025 The Portfolio Chronicle. All Rights Reserved.</p>
+        </footer>
+
     </div>
-    <div class="hide">
-        <p>
-            Click the words above, to proceed to my porfolio.
-        </p>
-    </div>
+
+    <script>
+        // Set current date
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date();
+        document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
+        document.getElementById('publishDate').textContent = today.toLocaleDateString('en-US', options);
+    </script>
+
+    <!-- Page Flip Animation -->
 </body>
+
 </html>

@@ -1,58 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="include/contact_style.css">
-    <script src="https://kit.fontawesome.com/287833829f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Terence Franz Indenerio</title>
+  <link rel="stylesheet" href="include/contact_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/287833829f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li>
-                <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
-            </li>
-            <li>
-                <a href="work.html"><i class="fa-solid fa-folder"></i></a>
-            </li>
-            <li>
-                <a href="contact.html"><i class="fa-solid fa-address-book"></i></a>
-            </li>
-        </ul>
+  <!-- Newspaper Header -->
+  <header class="newspaper-header">
+    <div class="header-top">
+      <div class="edition-info">Vol. 2025 • Issue #001</div>
+      <div class="date-info" id="currentDate"></div>
+    </div>
+    <div class="masthead">
+      <h1 class="newspaper-title">THE PORTFOLIO CHRONICLE</h1>
+      <p class="tagline">All the Code That's Fit to Print</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="work.html">PORTFOLIO</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+      </ul>
     </nav>
+    <div class="header-line"></div>
   </header>
 
-    <div class="form-container">
-      <div class="technology-container">
-        <h2 class="section-heading">Contact Me</h2>
-        <div class="img-container">
-          <img class="img_2" src="images/image_2.png" alt="">
-          <h2>
-            I would love to hear from you. Feel free to reach out to me using the contact information below:
-          </h2>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="headline-box">
+        <span class="breaking-news">CORRESPONDENCE</span>
+        <h1 class="main-headline">Get In Touch</h1>
+        <p class="subheadline">Let's Connect and Create Something Amazing Together</p>
+        <div class="byline">
+          <span>Contact Information</span>
+          <span class="separator">|</span>
+          <span id="publishDate"></span>
+        </div>
       </div>
-      <section id="contact">
-        <ul class="section-content">
-            <div class="contact-box">
-                <div class="contact-box-left">
-                    <li><i class="fa-solid fa-envelope"></i>        :   mazi39662@gmail.com</li>
-                    <li><i class="fa-sharp fa-solid fa-phone"></i>      :   +639771043990</li>
-                </div>
-                <div class="contact-box-right">
-                    <li><i class="fa-brands fa-square-facebook"></i>        :   @Franz.Ocubillo</li>
-                    <li><i class="fa-brands fa-telegram"></i>       :   @W4k1La</li>
-                </div>
-            </div>
-            <li><i class="fa-brands fa-square-instagram"></i>       :   @waki_w4k1</li>
-        </ul>
-    </section>
-  </div>
-</body>
-</html>
+    </div>
+  </section>
 
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Featured Contact Section -->
+      <article class="featured-contact">
+        <div class="contact-layout">
+          <div class="contact-image-section">
+            <figure class="profile-figure">
+              <img class="contact-img" src="images/image_2.png" alt="Terence Franz Indenerio">
+              <figcaption>Terence Franz Indenerio</figcaption>
+            </figure>
+            <div class="availability-box">
+              <h3>Availability Status</h3>
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Available for Projects</span>
+              </div>
+              <p>Open to freelance opportunities and collaborations</p>
+            </div>
+          </div>
+
+          <div class="contact-info-section">
+            <h2 class="section-title">Direct Contact</h2>
+            <p class="intro-text">
+              I would love to hear from you. Whether you have a project in mind,
+              a question to ask, or just want to connect, feel free to reach out
+              using any of the contact methods below.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-card primary">
+                <div class="card-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="card-content">
+                  <h3>Email Address</h3>
+                  <p class="contact-value">mazi39662@gmail.com</p>
+                  <a href="mailto:mazi39662@gmail.com" class="contact-link">Send Email →</a>
+                </div>
+              </div>
+
+              <div class="contact-card primary">
+                <div class="card-icon">
+                  <i class="fa-sharp fa-solid fa-phone"></i>
+                </div>
+                <div class="card-content">
+                  <h3>Phone Number</h3>
+                  <p class="contact-value">+639771043990</p>
+                  <a href="tel:+639771043990" class="contact-link">Call Now →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Social Media Section -->
+      <section class="social-section">
+        <div class="section-header">
+          <h2 class="section-title-large">SOCIAL CONNECTIONS</h2>
+          <div class="decorative-line"></div>
+        </div>
+
+        <div class="social-grid">
+          <a href="https://www.facebook.com/Franz.Ocubillo" target="_blank" class="social-card facebook">
+            <div class="social-icon">
+              <i class="fa-brands fa-square-facebook"></i>
+            </div>
+            <div class="social-info">
+              <h3>Facebook</h3>
+              <p class="social-handle">@Franz.Ocubillo</p>
+              <span class="platform-label">Connect on Facebook</span>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+
+          <a href="https://t.me/W4k1La" target="_blank" class="social-card telegram">
+            <div class="social-icon">
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+            <div class="social-info">
+              <h3>Telegram</h3>
+              <p class="social-handle">@W4k1La</p>
+              <span class="platform-label">Message on Telegram</span>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+
+          <a href="https://www.instagram.com/waki_w4k1" target="_blank" class="social-card instagram">
+            <div class="social-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="social-info">
+              <h3>Instagram</h3>
+              <p class="social-handle">@waki_w4k1</p>
+              <span class="platform-label">Follow on Instagram</span>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+
+          <a href="https://www.tiktok.com/@izmewaki" target="_blank" class="social-card tiktok">
+            <div class="social-icon">
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="social-info">
+              <h3>TikTok</h3>
+              <p class="social-handle">@izmewaki</p>
+              <span class="platform-label">Watch on TikTok</span>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Quick Contact Info -->
+      <section class="quick-info-section">
+        <div class="section-header">
+          <h2 class="section-title-large">QUICK REFERENCE</h2>
+          <div class="decorative-line"></div>
+        </div>
+
+        <div class="info-columns">
+          <div class="info-column">
+            <h3>Response Time</h3>
+            <p>Typically within 24-48 hours</p>
+          </div>
+          <div class="info-column">
+            <h3>Preferred Contact</h3>
+            <p>Email for professional inquiries</p>
+          </div>
+          <div class="info-column">
+            <h3>Time Zone</h3>
+            <p>Philippine Standard Time (UTC+8)</p>
+          </div>
+          <div class="info-column">
+            <h3>Languages</h3>
+            <p>English, Filipino</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Building Section -->
+      <section class="statement-section">
+        <div class="statement-box">
+          <h3>Building Together</h3>
+          <p>
+            I'm building a small team and community to build and learn. If you want to join, just contact me.
+            I'll be glad to collaborate with you, whether building apps or building games.
+            Who knows, maybe something great will come out of it.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <div class="cta-section">
+        <div class="cta-box">
+          <h3>READY TO START A PROJECT?</h3>
+          <p>Let's discuss how we can work together to bring your ideas to life</p>
+          <div class="cta-buttons">
+            <a href="mailto:mazi39662@gmail.com" class="btn-primary">
+              <i class="fa-solid fa-envelope"></i> Send Message
+            </a>
+            <a href="work.html" class="btn-secondary">
+              <i class="fa-solid fa-folder"></i> View Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="newspaper-footer">
+    <div class="footer-line"></div>
+    <div class="container">
+      <p class="copyright">© 2025 The Portfolio Chronicle. All rights reserved.</p>
+      <p class="attribution">Terence Franz Indenerio - Web Developer</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current date
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const today = new Date();
+    document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
+    document.getElementById('publishDate').textContent = today.toLocaleDateString('en-US', options);
+
+    // Animate status dot
+    setInterval(() => {
+      document.querySelector('.status-dot').style.animation = 'none';
+      setTimeout(() => {
+        document.querySelector('.status-dot').style.animation = 'pulse 2s ease-in-out infinite';
+      }, 10);
+    }, 2000);
+  </script>
+</body>
+
+</html>
