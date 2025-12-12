@@ -1,0 +1,44 @@
+/* ===================================
+   NEWSPAPER THEME - GLOBAL STYLES
+   =================================== */
+
+/* Root Variables */
+:root {
+    --newspaper-bg: #f4f1e8;
+    --newspaper-text: #2c2c2c;
+    --newspaper-black: #1a1a1a;
+    --newspaper-gray: #4a4a4a;
+    --newspaper-light-gray: #e5e5e5;
+    --newspaper-white: #f4f1e8;
+    --accent-red: #c41e3a;
+    --border-color: #1a1a1a;
+    --light-border: #d4d4d4;
+    --accent-gold: #b59410;
+    --headline-font: 'Playfair Display', serif;
+    --body-font: 'Merriweather', serif;
+    --accent-font: 'Libre Baskerville', serif;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--newspaper-bg);
+    color: var(--newspaper-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url('../images/newspaper-texture.png');
+    background-attachment: fixed; /* Parallax effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

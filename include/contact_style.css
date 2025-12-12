@@ -10,13 +10,13 @@
 }
 
 :root {
-  --newspaper-black: #1a1a1a;
-  --newspaper-gray: #4a4a4a;
-  --newspaper-light-gray: #e5e5e5;
-  --newspaper-white: #fafafa;
-  --accent-gold: #c9a961;
-  --accent-red: #8b0000;
-  --border-color: #2a2a2a;
+    --newspaper-black: #1a1a1a;
+    --newspaper-gray: #4a4a4a;
+    --newspaper-light-gray: #e5e5e5;
+    --newspaper-white: #f4f1e8;
+    --border-color: #1a1a1a;
+    --accent-gold: #b59410;
+    --accent-red: #c41e3a;
 }
 
 /* ===================================
