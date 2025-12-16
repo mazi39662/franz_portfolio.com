@@ -18,12 +18,6 @@
   --accent-red: #8b0000;
   --border-color: #2a2a2a;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 /* ===================================
    NEWSPAPER HEADER (Same as About)
    =================================== */

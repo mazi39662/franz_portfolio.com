@@ -103,7 +103,7 @@
 .main-nav a:hover,
 .main-nav a.active {
     background-color: var(--accent-gold);
-    color: var(--newspaper-black);
+  color: #fff;
 }
 
 .header-line {
