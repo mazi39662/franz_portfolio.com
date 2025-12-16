@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Terence Franz Indenerio</title>
     <link rel="stylesheet" href="include/about_style.css" />
+    <link rel="stylesheet" href="include/header.css" />
+    <link rel="stylesheet" href="include/shared.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
@@ -14,72 +16,73 @@
       crossorigin="anonymous"></script>
   </head>
   <body id="about-page">
-    <!-- Newspaper Header -->
-    <header class="newspaper-header">
-      <div class="header-top">
-        <div class="edition-info">Vol. 2025 • Issue #001</div>
-        <div class="date-info" id="currentDate"></div>
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">The Chronicle<span>.</span></a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
       </div>
-      <div class="masthead">
-        <h1 class="newspaper-title">THE PORTFOLIO CHRONICLE</h1>
-        <p class="tagline">All the Code That's Fit to Print</p>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="work.html">PORTFOLIO</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="resume.html">RESUME</a></li>
-        </ul>
-      </nav>
-      <div class="header-line"></div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Page Banner -->
+    <section class="page-banner">
       <div class="container">
-        <div class="headline-box">
-          <span class="breaking-news">SPECIAL FEATURE</span>
-          <h1 class="main-headline">Meet Terence Franz Indenerio</h1>
-          <p class="subheadline">Web Developer • Problem Solver • Digital Artist</p>
-          <div class="byline">
-            <span>By The Editorial Team</span>
-            <span class="separator">|</span>
-            <span id="publishDate"></span>
-          </div>
+        <div class="banner-content">
+          <h1 class="banner-title">About the Author</h1>
+          <p class="banner-subtitle">A Glimpse Behind the Byline</p>
+        </div>
+        <div class="banner-decoration">
+          <span class="decoration-text">SINCE 2023</span>
         </div>
       </div>
     </section>
 
     <!-- Main Content -->
-    <main class="main-content">
-      <div class="container">
-        <!-- Featured Story -->
-        <article class="featured-article">
-          <div class="article-columns">
-            <div class="column column-image">
-              <figure class="article-image">
-                <img src="images/image_1.jpg" alt="Terence Franz Indenerio" />
-                <figcaption>Terence Franz Indenerio at work</figcaption>
-              </figure>
-            </div>
-            <div class="column column-text">
-              <h2 class="section-title">The Developer's Journey</h2>
-              <p class="lead-paragraph">
-                As a web developer with a talent for problem-solving and a passion for
-                programming, I have a great foundation in front end development. Additionally, I
-                gained valuable experience in the web2py framework using Python,
-                enabling me to craft visually appealing and user-friendly websites that
-                offer exceptional experiences.
-              </p>
-              <p>
-                I enjoy creating elegant and efficient solutions to complex problems.
-                Browse through my portfolio to see some of my projects and witness the
-                intersection of creativity and technical expertise.
-              </p>
-            </div>
-          </div>
+    <main class="main-content container">
+      <div class="about-grid">
+
+        <!-- Main Story Content -->
+        <article class="main-story fade-in">
+          <figure class="main-story-image">
+            <img src="images/image_1.jpg" alt="Terence Franz Indenerio at his desk">
+            <figcaption>Terence Franz Indenerio, architect of digital experiences.</figcaption>
+          </figure>
+
+          <h2 class="story-title">The Developer's Journey</h2>
+
+          <p class="lead-paragraph">
+            As a web developer with a talent for problem-solving and a passion for programming, I have a great foundation in front end development. Additionally, I gained valuable experience in the web2py framework using Python, enabling me to craft visually appealing and user-friendly websites that offer exceptional experiences.
+          </p>
+          <p>
+            I enjoy creating elegant and efficient solutions to complex problems. Browse through my portfolio to see some of my projects and witness the intersection of creativity and technical expertise.
+          </p>
+
+          <blockquote class="pull-quote">
+            "Code is my canvas, and logic is my brush. I strive to create digital masterpieces that are both beautiful and functional."
+          </blockquote>
+
+          <p>
+            Hello, I'm Terence Franz Indenerio, and I am passionate about problem solving and coding. In my free time, I enjoy drawing and playing online games like CODM to unwind. I am a proud graduate of BSIT from Palompon Institute of Technology.
+          </p>
+          <p>
+            During my time in college, I always sought out fellow coding enthusiasts, as there were only a few at my school who shared the same interest. Despite the limited resources, I managed to create mobile games and continuously expand my programming knowledge. I often wish there was a larger group of programmers at my school, but I make the most of the opportunities available. Programming brings me immense joy, to the point where I can spend hours fully immersed in coding, entering a flow state.
+          </p>
+          <p>
+            It empowers me to bring my ideas to life, limited only by my imagination. However, there is a lingering fear in my mind that I might not be good enough for the programming industry. Nevertheless, I am determined to learn everything I need to grow and overcome any obstacles in my path.
+          </p>
         </article>
 
         <!-- Profile Section -->
