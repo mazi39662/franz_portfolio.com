@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap"
         rel="stylesheet">
+  <link rel="stylesheet" href="include/shared_style.css">
     <script src="https://kit.fontawesome.com/287833829f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -38,9 +39,9 @@
         <div class="header-line"></div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
             <div class="headline-box">
                 <span class="breaking-news">PROFESSIONAL PROFILE</span>
                 <h1 class="main-headline">Curriculum Vitae</h1>
@@ -51,12 +52,10 @@
                     <span id="publishDate"></span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
+        <!-- Main Content -->
+        <main class="main-content">
 
             <!-- Profile Header -->
             <section class="profile-header">
@@ -435,24 +434,23 @@
                 </div>
             </section>
 
-        </div>
-    </main>
+        </main>
+    </div>
 
-    <!-- Footer -->
-    <footer class="newspaper-footer">
-        <div class="footer-line"></div>
-        <div class="container">
-            <p class="copyright">© 2025 The Portfolio Chronicle. All rights reserved.</p>
-            <p class="attribution">Terence Franz Indenerio - Full Stack Developer</p>
-        </div>
-    </footer>
-
+        <!-- Footer -->
+        <footer class="newspaper-footer">
+            <div class="footer-line"></div>
+            <div class="container">
+                <p class="copyright">© 2025 The Portfolio Chronicle. All rights reserved.</p>
+                <p class="attribution">Terence Franz Indenerio - Full Stack Developer</p>
+            </div>
+        </footer>
     <script>
         // Set current date
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         const today = new Date();
-        document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
-        document.getElementById('publishDate').textContent = today.toLocaleDateString('en-US', options);
+        document.getElementById('currentDate').textContent = today.toLocaleString('en-US', options);
+        document.getElementById('publishDate').textContent = today.toLocaleString('en-US', options);
     </script>
     <script src="include/main.js"></script>
 </body>
