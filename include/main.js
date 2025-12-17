@@ -32,6 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
           icon.classList.add("fa-bars");
         }
       }
+      // Dynamic Age Calculation logic moved
     });
+  }
+
+  // Dynamic Age Calculation
+  const ageElement = document.getElementById("userAge");
+  if (ageElement) {
+    const birthDate = new Date("2001-01-26");
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    ageElement.textContent = `${age} Years`;
   }
 });
