@@ -23,17 +23,7 @@ body {
     font-family: 'Merriweather', Georgia, serif;
     background-color: var(--newspaper-white);
     /* Newspaper texture */
-    background-image:
-        repeating-linear-gradient(0deg,
-            transparent,
-            transparent 2px,
-            rgba(0, 0, 0, 0.02) 2px,
-            rgba(0, 0, 0, 0.02) 4px),
-        repeating-linear-gradient(90deg,
-            transparent,
-            transparent 2px,
-            rgba(0, 0, 0, 0.02) 2px,
-            rgba(0, 0, 0, 0.02) 4px);
+
     color: var(--newspaper-black);
     line-height: 1.8;
     font-size: 16px;
