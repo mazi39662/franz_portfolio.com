@@ -771,33 +771,51 @@ body {
     color: var(--newspaper-gray);
 }
 
-flex-direction: column;
-align-items: flex-start;
-}
+@media (max-width: 1024px) {
+    .resume-layout {
+        grid-template-columns: 1fr;
+    }
 
-.profile-actions {
-    flex-direction: row;
-    width: 100%;
-}
+    .resume-sidebar {
+        position: static;
+        margin-bottom: 40px;
+    }
 
-.btn-download,
-.btn-contact {
-    flex: 1;
-}
+    .profile-layout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.projects-built-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
+    .profile-actions {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .btn-download,
+    .btn-contact {
+        flex: 1;
+    }
+
+    .projects-built-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
     .newspaper-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 2px;
+        word-wrap: break-word;
+        line-height: 1.1;
+    }
+
+    .header-top {
+        flex-direction: column;
     }
 
     .main-nav ul {
         flex-direction: column;
+        gap: 0;
     }
 
     .main-nav a {
@@ -805,6 +823,7 @@ align-items: flex-start;
         text-align: center;
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 15px;
     }
 
     .main-headline {
@@ -818,7 +837,7 @@ align-items: flex-start;
     .profile-header,
     .resume-sidebar,
     .resume-main {
-        padding: 30px 20px;
+        padding: 30px 15px;
     }
 
     .profile-name {
@@ -834,7 +853,7 @@ align-items: flex-start;
     }
 
     .cta-box {
-        padding: 40px 20px;
+        padding: 40px 15px;
     }
 
     .cta-buttons {
@@ -846,6 +865,7 @@ align-items: flex-start;
     .btn-secondary {
         width: 100%;
         max-width: 300px;
+        text-align: center;
     }
 
     .profile-actions {
@@ -864,7 +884,12 @@ align-items: flex-start;
 
 @media (max-width: 480px) {
     .newspaper-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    .masthead {
+        padding: 15px 10px;
     }
 
     .main-headline {

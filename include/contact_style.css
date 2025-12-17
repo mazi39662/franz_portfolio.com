@@ -18,6 +18,7 @@
   --accent-red: #8b0000;
   --border-color: #2a2a2a;
 }
+
 /* ===================================
    NEWSPAPER HEADER (Same as About)
    =================================== */
@@ -873,8 +874,10 @@
 
 @media (max-width: 768px) {
   .newspaper-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 2px;
+    word-wrap: break-word;
+    line-height: 1.1;
   }
 
   .header-top {
@@ -886,6 +889,7 @@
   .main-nav ul {
     flex-direction: column;
     width: 100%;
+    gap: 0;
   }
 
   .main-nav li {
@@ -916,7 +920,7 @@
   .featured-contact,
   .social-section,
   .quick-info-section {
-    padding: 30px 20px;
+    padding: 30px 15px;
   }
 
   .info-columns {
@@ -924,7 +928,7 @@
   }
 
   .cta-box {
-    padding: 40px 20px;
+    padding: 40px 15px;
   }
 
   .cta-buttons {
@@ -942,17 +946,17 @@
 
 @media (max-width: 480px) {
   .newspaper-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     letter-spacing: 1px;
   }
 
   .main-headline {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.2;
   }
 
   .masthead {
-    padding: 20px 10px;
+    padding: 15px 10px;
   }
 
   .contact-card {

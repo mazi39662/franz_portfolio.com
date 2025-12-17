@@ -802,15 +802,19 @@
     .projects-grid {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
 
     .project-card {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .newspaper-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 2px;
+        line-height: 1.1;
+        word-wrap: break-word;
     }
 
     .header-top {
@@ -822,6 +826,7 @@
     .main-nav ul {
         flex-direction: column;
         width: 100%;
+        gap: 0;
     }
 
     .main-nav li {
@@ -852,11 +857,11 @@
     .projects-section,
     .technology-section,
     .contact-section {
-        padding: 30px 20px;
+        padding: 30px 15px;
     }
 
     .statement-box {
-        padding: 25px;
+        padding: 25px 15px;
         border-width: 3px;
     }
 
@@ -870,6 +875,7 @@
 
     .tech-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .contact-grid {
@@ -879,29 +885,43 @@
 
 @media (max-width: 480px) {
     .newspaper-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         letter-spacing: 1px;
     }
 
     .main-headline {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.2;
     }
 
     .masthead {
-        padding: 20px 10px;
+        padding: 15px 10px;
     }
 
     .tech-item {
-        padding: 20px 10px;
+        padding: 15px 10px;
     }
 
     .tech-item i {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .project-meta {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+    }
+
+    .project-card:nth-child(n) {
+        flex-direction: column !important;
+    }
+
+    .project-card:nth-child(n) .project-image,
+    .project-card:nth-child(n) .project-content {
+        width: 100% !important;
+        border: none !important;
+    }
+
+    .project-card:nth-child(n) .project-image {
+        border-bottom: 2px solid var(--newspaper-black) !important;
     }
 }
