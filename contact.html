@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Terence Franz Indenerio</title>
   <link rel="stylesheet" href="include/contact_style.css">
-  <link rel="stylesheet" href="include/header.css" />
-  <link rel="stylesheet" href="include/shared.css" />
+  <link rel="stylesheet" href="include/shared_style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,43 +17,46 @@
 </head>
 
 <body id="contact-page">
-  <!-- Main Header -->
-  <header class="main-header">
-    <div class="header-container">
-      <a href="index.html" class="logo">The Chronicle<span>.</span></a>
-      <nav class="main-nav">
-          <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="work.html">WORK</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-              <li><a href="resume.html">RESUME</a></li>
-          </ul>
-      </nav>
-      <button class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </button>
+  <!-- Newspaper Header -->
+  <header class="newspaper-header">
+    <div class="header-top">
+      <div class="edition-info">Vol. 2025 • Issue #001</div>
+      <div class="date-info" id="currentDate"></div>
     </div>
+    <div class="masthead">
+      <h1 class="newspaper-title">THE PORTFOLIO CHRONICLE</h1>
+      <p class="tagline">All the Code That's Fit to Print</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="work.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+      </ul>
+    </nav>
+    <div class="header-line"></div>
   </header>
 
-<!-- Page Banner -->
-<section class="page-banner">
-  <div class="container">
-    <div class="banner-content">
-      <h1 class="banner-title">Get In Touch</h1>
-      <p class="banner-subtitle">Let's Connect and Create Something Amazing Together</p>
-    </div>
-    <div class="banner-decoration">
-      <span class="decoration-text">SINCE 2023</span>
-    </div>
-  </div>
-</section>
+<div class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="headline-box">
+        <span class="breaking-news">CORRESPONDENCE</span>
+        <h1 class="main-headline">Get In Touch</h1>
+        <p class="subheadline">Let's Connect and Create Something Amazing Together</p>
+        <div class="byline">
+          <span>Contact Information</span>
+          <span class="separator">|</span>
+          <span id="publishDate"></span>
+        </div>
+      </div>
+    </section>
 
-<!-- Main Content -->
-<main class="main-content container">
-    <div class="fade-in">
+    <!-- Main Content -->
+    <main class="main-content">
+
         <!-- Featured Contact Section -->
         <article class="featured-contact">
           <div class="contact-layout">
