@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notibee - Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #0f0f0f;
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --accent: #facc15;
+            --accent-glow: rgba(250, 204, 21, 0.15);
+            --border: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(250, 204, 21, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(250, 204, 21, 0.05) 0%, transparent 40%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: var(--accent-glow);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(250, 204, 21, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+            background: linear-gradient(to bottom, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .last-updated::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent);
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 span {
+            opacity: 0.3;
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .guidelines-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .guideline-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.25rem;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .guideline-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(250, 204, 21, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .guideline-icon {
+            color: var(--accent);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .highlight-box {
+            background: rgba(239, 68, 68, 0.05);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            border-radius: 0 16px 16px 0;
+            color: #fff;
+            margin: 2rem 0;
+        }
+
+        .back-nav {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 640px) {
+            .glass-card {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <header>
+                <div class="app-badge">Hive Community</div>
+                <h1>Terms of Service</h1>
+                <div class="last-updated">Active Hive Rules</div>
+            </header>
+
+            <main>
+                <section>
+                    <h2><span>01</span> Acceptance of Terms</h2>
+                    <p>By entering the NotiBee Hive, you agree to these terms. If you do not agree, please do not use
+                        the app. This is a binding agreement for all members of the swarm.</p>
+                </section>
+
+                <section>
+                    <h2><span>02</span> Community Guidelines</h2>
+                    <p>The Hive is a swarm of friends. To keep the hive healthy, all users are expected to:</p>
+                    <div class="guidelines-grid">
+                        <div class="guideline-item">
+                            <span class="guideline-icon">🐝</span>
+                            <div>Be respectful and kind to other bees in the Hive.</div>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-icon">🔕</span>
+                            <div>Not use the alert/vibration system for any form of harassment.</div>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-icon">🚫</span>
+                            <div>Not upload inappropriate, offensive, or illegal imagery.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2><span>03</span> Account Security</h2>
+                    <p>You are responsible for remembering your Bee ID and password.</p>
+                    <div class="highlight-box">
+                        <b>CRITICAL:</b> Since NotiBee is designed for maximum privacy, we do not use emails for account
+                        recovery. If you lose your password, <b>your ID cannot be recovered</b>. We do not have access
+                        to your credentials.
+                    </div>
+                </section>
+
+                <section>
+                    <h2><span>04</span> Service Availability</h2>
+                    <p>NotiBee is provided "as is". While we strive for 100% uptime in the relay, we do not guarantee
+                        that buzzes will always be delivered instantaneously due to varying network conditions and hive
+                        activity.</p>
+                </section>
+            </main>
+        </div>
+
+        <footer class="back-nav">
+            <a href="work.html" class="back-link">
+                <span>←</span> Return to Portfolio Showcase
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
