@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notibee - CSAE Protection Standards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #0f0f0f;
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --accent: #facc15;
+            --accent-glow: rgba(250, 204, 21, 0.15);
+            --border: #1e293b;
+            --danger: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(250, 204, 21, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(250, 204, 21, 0.05) 0%, transparent 40%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+            background: linear-gradient(to bottom, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 span {
+            opacity: 0.3;
+            font-size: 1.1rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .standard-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.25rem;
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .standard-item:hover {
+            border-color: var(--accent-glow);
+            transform: translateX(4px);
+        }
+
+        .danger-box {
+            background: rgba(239, 68, 68, 0.05);
+            border-left: 4px solid var(--danger);
+            padding: 1.5rem;
+            border-radius: 0 16px 16px 0;
+            margin: 2rem 0;
+        }
+
+        .danger-box h3 {
+            color: var(--danger);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .back-nav {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 640px) {
+            .glass-card {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <header>
+                <div class="app-badge">Safety First</div>
+                <h1>CSAE Protection Standards</h1>
+                <div class="last-updated">Zero Tolerance Implementation</div>
+            </header>
+
+            <main>
+                <section>
+                    <h2><span>01</span> Our Commitment</h2>
+                    <p>NotiBee is dedicated to providing a safe environment for all members of the Hive. We maintain a
+                        zero-tolerance policy regarding Child Sexual Abuse and Exploitation (CSAE). Protecting the
+                        safety and well-being of minors is our highest priority.</p>
+                </section>
+
+                <section>
+                    <h2><span>02</span> Strictly Prohibited Content</h2>
+                    <p>The following activities are strictly prohibited within the NotiBee Hive:</p>
+                    <div class="standard-item">
+                        <strong>Illegal Imagery:</strong> The uploading, sharing, or distribution of any imagery
+                        depicting child sexual abuse or exploitation.
+                    </div>
+                    <div class="standard-item">
+                        <strong>Grooming Behavior:</strong> Any attempt to solicit or engage in manipulative behavior
+                        with minors for exploitative purposes.
+                    </div>
+                    <div class="standard-item">
+                        <strong>Promotional Content:</strong> Sharing links or references to external sites containing
+                        CSAE materials.
+                    </div>
+                </section>
+
+                <section>
+                    <h2><span>03</span> Detection and Prevention</h2>
+                    <p>To ensure the Hive remains safe, we employ various measures:</p>
+                    <div class="standard-item">
+                        <strong>Hashing & Matching:</strong> If content is uploaded, it may be compared against known
+                        databases of illegal materials (using standard hashing technology) to prevent the spread of
+                        CSAE.
+                    </div>
+                    <div class="standard-item">
+                        <strong>Manual Reporting:</strong> Our built-in reporting systems allow any bee to flag
+                        suspicious behavior or content immediately for review by our safety team.
+                    </div>
+                </section>
+
+                <section>
+                    <h2><span>04</span> Law Enforcement Cooperation</h2>
+                    <div class="danger-box">
+                        <h3>Reporting to Authorities</h3>
+                        <p style="margin-bottom: 0;">Any identified instances of CSAE will be reported directly to the
+                            <b>National Center for Missing & Exploited Children (NCMEC)</b> and appropriate global law
+                            enforcement agencies. We cooperate fully with authorities to ensure individuals responsible
+                            are held accountable.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2><span>05</span> Enforcement Actions</h2>
+                    <p>Violators of these standards will face immediate and permanent termination of their Bee ID. There
+                        is no appeal process for violations related to the safety of minors.</p>
+                </section>
+            </main>
+        </div>
+
+        <footer class="back-nav">
+            <a href="work.html" class="back-link">
+                <span>←</span> Return to Portfolio Showcase
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
