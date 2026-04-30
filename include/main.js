@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const bodyId = document.body.id;
-  const navLinks = document.querySelectorAll(".main-nav a");
+  const navLinks = document.querySelectorAll(".main-nav a, .mag-link, .nav-cluster a");
 
   navLinks.forEach((link) => {
-    const linkPage = link.getAttribute("href").split(".")[0];
+    const href = link.getAttribute("href");
+    if (!href) return;
+    const linkPage = href.split(".")[0];
     if (bodyId === `${linkPage}-page`) {
       link.classList.add("active");
     }

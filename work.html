@@ -5,680 +5,320 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Terence Franz Indenerio</title>
+  <title>PORTFOLIO CHRONICLE - PROJECT SHOWCASE</title>
   <link rel="stylesheet" href="include/work_style.css" />
   <link rel="stylesheet" href="include/shared_style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@300;400;600;800;900&display=swap"
-    rel="stylesheet">
   <script src="https://kit.fontawesome.com/287833829f.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="work-page">
-  <!-- Newspaper Header -->
-  <header class="newspaper-header">
-    <div class="header-top">
-      <div class="edition-info">Vol. 2025 • Issue #001</div>
-      <div class="date-info" id="currentDate"></div>
-    </div>
-    <div class="masthead">
-      <h1 class="newspaper-title">THE PORTFOLIO CHRONICLE</h1>
-      <p class="tagline">The Daily Record of Digital Innovation</p>
-    </div>
-    <nav class="main-nav">
-      <button class="hamburger-menu" aria-label="Toggle Navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="work.html">PORTFOLIO</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="resume.html">RESUME</a></li>
-      </ul>
-    </nav>
-    <div class="header-line"></div>
-  </header>
-
-  <div class="container">
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="headline-box">
-        <span class="breaking-news">FEATURED WORKS</span>
-        <h1 class="main-headline">Portfolio & Projects</h1>
-        <p class="subheadline">A Curated Collection of Development Excellence</p>
-        <div class="byline">
-          <span>Project Showcase</span>
-          <span class="separator">|</span>
-          <span id="publishDate"></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Main Content -->
-    <main class="main-content">
-
-      <!-- Cypher Studio Section -->
-      <section class="cypher-studio-section">
-        <div class="cypher-container">
-          <div class="cypher-header">
-            <div class="cypher-badge">PROJECT OF W4K1</div>
-            <h2 class="cypher-title">Designing the <span class="highlight">Standard</span> of 2026.</h2>
-            <p class="cypher-intro">Crafting premium digital experiences that blend aesthetic utility with
-              high-performance engineering. Join the elite circle of early adopters.</p>
-            <div class="cypher-actions">
-              <a href="https://cypherstudio.netlify.app/" target="_blank" class="cypher-btn primary">ENTER GALLERY <i
-                  class="fa-solid fa-arrow-right"></i></a>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNiiEy_hfYk9hG4Aqo3vjeBHm2dVRQ6NernDkF8glU-5O9GA/viewform"
-                target="_blank" class="cypher-btn secondary">TEST THE APP</a>
-            </div>
-          </div>
-
-          <div class="cypher-projects-grid">
-            <!-- Project: NotiBee -->
-            <article class="cypher-card">
-              <div class="cypher-card-image">
-                <img src="images/notibee.png" alt="NotiBee Logo">
-                <div class="card-status">ACTIVE BETA</div>
-              </div>
-              <div class="cypher-card-content">
-                <h3 class="cypher-card-title">NotiBee</h3>
-                <p class="cypher-card-description">
-                  A notification-first social platform designed for instant, tactile connections.
-                  Stay in sync with your inner circle through real-time "Buzzes," haptic interactions,
-                  and a vibrant, gamified ecosystem.
-                </p>
-                <div class="cypher-card-tags">
-                  <span>Social</span>
-                  <span>Real-time</span>
-                  <span>Gamified</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project: The Fold -->
-            <article class="cypher-card">
-              <div class="cypher-card-image">
-                <img src="images/the-fold.jpg" alt="The Fold Logo">
-                <div class="card-status">ACTIVE BETA</div>
-              </div>
-              <div class="cypher-card-content">
-                <h3 class="cypher-card-title">The Fold</h3>
-                <p class="cypher-card-description">
-                  A digital news aggregator that blends the timeless elegance of a vintage newspaper
-                  with the speed of modern reporting. Experience curated dispatches, live weather
-                  integration, and classic mental puzzles in a premium parchment-styled interface.
-                </p>
-                <div class="cypher-card-tags">
-                  <span>News</span>
-                  <span>Aggregator</span>
-                  <span>Premium UI</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Featured Projects Section -->
-      <section class="projects-section">
-        <div class="section-header">
-          <h2 class="section-title-large">MAJOR PROJECTS</h2>
-          <div class="decorative-line"></div>
-        </div>
-
-        <!-- Project Grid -->
-        <div class="projects-grid">
-
-          <!-- Project 1 - HR Vale Mobile -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <a href="https://play.google.com/store/apps/details?id=com.bapplware.hrvale&pcampaignid=web_share"
-                target="_blank">
-                <img src="images/ess.png" alt="HR Vale Mobile" onerror="this.src='images/work1.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">View on Play Store →</span>
-                </div>
-              </a>
-            </div>
-            <div class="project-content">
-              <span class="project-category">MOBILE APP</span>
-              <h3 class="project-title">HR Vale Mobile (Employee Self Service)</h3>
-              <p class="project-description">
-                A comprehensive mobile application built with Vue.js, Ionic, and TypeScript
-                for employee self-service. Features include attendance tracking, leave management,
-                and HR-related functionalities. Available on Google Play Store.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-brands fa-vuejs"></i> Vue.js
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-mobile-screen-button"></i> Ionic
-                </span>
-                <span class="meta-item">
-                  <i class="fa-brands fa-js"></i> TypeScript
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2 - Face Scanner -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <div class="no-link-wrapper">
-                <img src="images/facescanner.png" alt="Face Scanner Project" onerror="this.src='images/work1.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">Internal Testing</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-category">ENTERPRISE INNOVATION</span>
-              <h3 class="project-title">Face Scanner Module</h3>
-              <p class="project-description">
-                A specialized biometric attendance system currently in development for Suysing.
-                This module focuses on employee attendance tracking and is undergoing rigorous testing
-                before being deployed as a standard feature for future enterprise clients.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-id-card"></i> Attendance
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-flask"></i> Beta Testing
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3 - WJV Voucher App -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <div class="no-link-wrapper">
-                <img src="images/giftvoucher.png" alt="WJV Gift Voucher App" onerror="this.src='images/work1.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">Internal App</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-category">ENTERPRISE MOBILE APP</span>
-              <h3 class="project-title">WJV Inn - Gift Voucher App</h3>
-              <p class="project-description">
-                A dedicated mobile application for WJV Inn hotels that simplifies voucher redemption.
-                Features a QR code scanning system allowing guests to easily validate and avail their
-                gift vouchers, streamlining the hotel's front-desk operations.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-qrcode"></i> QR Scanning
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-hotel"></i> Hospitality
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4 - WJV-IMS -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <div class="no-link-wrapper">
-                <img src="images/ims.png" alt="WJV Inventory Management System" onerror="this.src='images/work3.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">Internal Tool</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-category">ENTERPRISE SOLUTION</span>
-              <h3 class="project-title">WJV - Inventory Management System</h3>
-              <p class="project-description">
-                A comprehensive web application designed for inventory tracking of merchandise,
-                non-merchandise, and hotel supplies. This internal tool streamlines stock management
-                for multi-faceted business operations, including bundle (ukay2) inventory control.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-boxes-stacked"></i> Inventory
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-hotel"></i> Internal Web App
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 5 - E-Freight -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <a href="https://www.e-freightgroup.com/" target="_blank">
-                <img src="images/efs.jpg" alt="E-Freight Website" onerror="this.src='images/work2.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">View Project →</span>
-                </div>
-              </a>
-            </div>
-            <div class="project-content">
-              <span class="project-category">WEB DEVELOPMENT</span>
-              <h3 class="project-title">E-Freight Website</h3>
-              <p class="project-description">
-                Professional logistics and freight management website. While the initial build existed,
-                I extensively modified and overhauled the platform to enhance its design, responsive layout,
-                and core functionalities, resulting in a robust tool for logistics operations.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-truck-fast"></i> Logistics
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-code"></i> Major Overhaul
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 6 - Rental Management -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <a href="https://wjvsystems-wjvcompany.pythonanywhere.com/rentals/default/index" target="_blank">
-                <img src="images/rentals.png" alt="Rental Management System" onerror="this.src='images/work3.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">View Project →</span>
-                </div>
-              </a>
-            </div>
-            <div class="project-content">
-              <span class="project-category">ENTERPRISE SOLUTION</span>
-              <h3 class="project-title">Rental Management System</h3>
-              <p class="project-description">
-                Complete rental management system built with Web2py and Python. Features include
-                property listings, tenant management, payment tracking, and comprehensive reporting
-                for efficient rental operations.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-brands fa-python"></i> Python
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-database"></i> Web2py
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 5 - WSSIST -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <div class="no-link-wrapper">
-                <img src="images/wssist.png" alt="WSSIST Inventory" onerror="this.src='images/work3.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">Internal Tool</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-category">ENTERPRISE SOLUTION</span>
-              <h3 class="project-title">WSSIST - Production Inventory</h3>
-              <p class="project-description">
-                A specialized inventory system tailored for Ukay2 items, bundles, and production workflows.
-                This internal tool facilitates the tracking and management of raw materials and bundled goods
-                throughout the production lifecycle.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-industry"></i> Production
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-boxes-packing"></i> Bundles
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 7 - RUE Capstone -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <a href="https://w4k1.itch.io/rue-capstone-project" target="_blank">
-                <img src="images/work1.png" alt="RUE Capstone Project" />
-                <div class="project-overlay">
-                  <span class="view-project">View Project →</span>
-                </div>
-              </a>
-            </div>
-            <div class="project-content">
-              <span class="project-category">CAPSTONE PROJECT</span>
-              <h3 class="project-title">RUE - Educational Game</h3>
-              <p class="project-description">
-                This is my capstone project which I developed to demonstrate
-                the practical application of game development principles and
-                educational technology integration.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-gamepad"></i> Game Development
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-code"></i> Interactive Design
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 8 - Waki Space Crusher -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <a href="https://w4k1.itch.io/waki-space-crusher" target="_blank">
-                <img src="images/work2.png" alt="Waki Space Crusher" />
-                <div class="project-overlay">
-                  <span class="view-project">View Project →</span>
-                </div>
-              </a>
-            </div>
-            <div class="project-content">
-              <span class="project-category">FESTIVAL SHOWCASE</span>
-              <h3 class="project-title">Waki Space Crusher</h3>
-              <p class="project-description">
-                This is the game I developed for the school COTE Festival to
-                showcase the talent and capabilities of the BSIT program through
-                interactive entertainment.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-rocket"></i> Arcade Game
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-trophy"></i> Exhibition
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 9 - Sheyken -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <a href="https://w4k1.itch.io/sheyken" target="_blank">
-                <img src="images/sheyken.png" alt="Sheyken Game" onerror="this.src='images/work1.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">View Project →</span>
-                </div>
-              </a>
-            </div>
-            <div class="project-content">
-              <span class="project-category">FESTIVAL SHOWCASE</span>
-              <h3 class="project-title">Sheyken</h3>
-              <p class="project-description">
-                Dive into the feathered frenzy of Sheyken! This chicken-jumping extravaganza is a vertical scroller
-                developed for the school festival. Soar through the skies, hopping from nest to nest in this
-                challenging game designed to showcase student talent.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-gamepad"></i> Game Development
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-trophy"></i> Exhibition
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 10 - Project 2021 -->
-          <article class="project-card featured">
-            <div class="project-image">
-              <a href="https://w4k1.itch.io/project2021-1-v11" target="_blank">
-                <img src="images/P7QkIb.jpg" alt="Project 2021 Mobile Game" onerror="this.src='images/work1.png'" />
-                <div class="project-overlay">
-                  <span class="view-project">View Project →</span>
-                </div>
-              </a>
-            </div>
-            <div class="project-content">
-              <span class="project-category">PERSONAL MILESTONE</span>
-              <h3 class="project-title">Project 2021</h3>
-              <p class="project-description">
-                Developed during the pandemic, this was my first ever mobile game project.
-                Originally intended for the Play Store, this project marks a significant milestone
-                in my journey as a mobile developer and showcases my early passion for game creation.
-              </p>
-              <div class="project-meta">
-                <span class="meta-item">
-                  <i class="fa-solid fa-mobile-screen-button"></i> Mobile Game
-                </span>
-                <span class="meta-item">
-                  <i class="fa-solid fa-code-branch"></i> First Project
-                </span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- Statement Section -->
-      <section class="statement-section">
-        <div class="statement-box">
-          <h3>Developer's Note</h3>
-          <p>
-            There are projects I did not include in my works because most of
-            the projects I made are projects of other students and other people that
-            I helped in making. Though the works I showed are not enough, I believe
-            I can still grow through my experience because it is still the beginning
-            of my career.
-          </p>
-        </div>
-      </section>
-
-      <!-- Technology Stack Section -->
-      <section class="technology-section">
-        <div class="section-header">
-          <h2 class="section-title-large">TECHNICAL EXPERTISE</h2>
-          <div class="decorative-line"></div>
-        </div>
-
-        <div class="tech-categories">
-
-          <!-- Academic Languages -->
-          <article class="tech-category">
-            <h3 class="tech-category-title">Languages Learned in School</h3>
-            <div class="tech-grid">
-              <a href="https://www.java.com/en/" target="_blank" class="tech-item java">
-                <i class="fa-brands fa-java"></i>
-                <span>Java</span>
-              </a>
-              <a href="https://www.python.org/" target="_blank" class="tech-item python">
-                <i class="fa-brands fa-python"></i>
-                <span>Python</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Self-Taught Languages -->
-          <article class="tech-category">
-            <h3 class="tech-category-title">Languages Learned Through Experience</h3>
-            <div class="tech-grid">
-              <a href="#" class="tech-item html">
-                <i class="fa-brands fa-html5"></i>
-                <span>HTML5</span>
-              </a>
-              <a href="#" class="tech-item css">
-                <i class="fa-brands fa-css3-alt"></i>
-                <span>CSS3</span>
-              </a>
-              <a href="#" class="tech-item javascript">
-                <i class="fa-brands fa-square-js"></i>
-                <span>JavaScript</span>
-              </a>
-              <a href="#" class="tech-item php">
-                <i class="fa-brands fa-php"></i>
-                <span>PHP</span>
-              </a>
-              <a href="#" class="tech-item database">
-                <i class="fas fa-database"></i>
-                <span>SQL</span>
-              </a>
-              <a href="#" class="tech-item gdscript">
-                <i class="fa-solid fa-code"></i>
-                <span>GDScript</span>
-              </a>
-              <a href="#" class="tech-item cpp">
-                <i class="fa-solid fa-code"></i>
-                <span>C++</span>
-              </a>
-              <a href="#" class="tech-item csharp">
-                <i class="fa-solid fa-code"></i>
-                <span>C#</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Frameworks & Tools -->
-          <article class="tech-category">
-            <h3 class="tech-category-title">Frameworks & Tools</h3>
-            <div class="tech-grid">
-              <a href="#" class="tech-item sass">
-                <i class="fa-brands fa-sass"></i>
-                <span>Sass</span>
-              </a>
-              <a href="#" class="tech-item bootstrap">
-                <i class="fa-brands fa-bootstrap"></i>
-                <span>Bootstrap</span>
-              </a>
-              <a href="#" class="tech-item jquery">
-                <i class="fa-brands fa-js"></i>
-                <span>jQuery</span>
-              </a>
-              <a href="#" class="tech-item godot">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>GODOT</span>
-              </a>
-              <a href="#" class="tech-item photoshop">
-                <i class="fa-solid fa-palette"></i>
-                <span>Photoshop</span>
-              </a>
-              <a href="#" class="tech-item vue">
-                <i class="fa-brands fa-vuejs"></i>
-                <span>Vue.js</span>
-              </a>
-              <a href="#" class="tech-item react">
-                <i class="fa-brands fa-react"></i>
-                <span>React Native</span>
-              </a>
-              <a href="#" class="tech-item typescript">
-                <i class="fa-solid fa-code"></i>
-                <span>TypeScript</span>
-              </a>
-              <a href="#" class="tech-item ionic">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <span>Ionic</span>
-              </a>
-              <a href="#" class="tech-item expo">
-                <i class="fa-solid fa-rocket"></i>
-                <span>Expo</span>
-              </a>
-              <a href="#" class="tech-item web2py">
-                <i class="fa-brands fa-python"></i>
-                <span>Web2py</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- AI Tools -->
-          <article class="tech-category">
-            <h3 class="tech-category-title">AI Tools Used</h3>
-            <div class="tech-grid">
-              <a href="#" class="tech-item ai">
-                <i class="fa-solid fa-robot"></i>
-                <span>Antigravity</span>
-              </a>
-              <a href="#" class="tech-item ai">
-                <i class="fa-solid fa-brain"></i>
-                <span>Claude</span>
-              </a>
-              <a href="#" class="tech-item ai">
-                <i class="fa-solid fa-comments"></i>
-                <span>ChatGPT</span>
-              </a>
-              <a href="#" class="tech-item ai">
-                <i class="fa-brands fa-google"></i>
-                <span>Jules by Google</span>
-              </a>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact-section">
-        <div class="section-header">
-          <h2 class="section-title-large">GET IN TOUCH</h2>
-          <div class="decorative-line"></div>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>mazi39662@gmail.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-sharp fa-solid fa-phone"></i>
-            <div>
-              <h4>Phone</h4>
-              <p>+639771043990</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-brands fa-square-facebook"></i>
-            <div>
-              <h4>Facebook</h4>
-              <p>@Franz.Ocubillo</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-brands fa-telegram"></i>
-            <div>
-              <h4>Telegram</h4>
-              <p>@W4k1La</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-brands fa-square-instagram"></i>
-            <div>
-              <h4>Instagram</h4>
-              <p>@waki_w4k1</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
+  <!-- Floating Background Icons -->
+  <div class="floating-stickers">
+    <i class="fa-brands fa-react sticker-icon react"></i>
+    <i class="fa-brands fa-vuejs sticker-icon vue"></i>
+    <i class="fa-brands fa-js sticker-icon js"></i>
+    <i class="fa-brands fa-python sticker-icon python"></i>
+    <i class="fa-brands fa-html5 sticker-icon html"></i>
+    <i class="fa-brands fa-css3-alt sticker-icon css"></i>
+    <i class="fa-brands fa-php sticker-icon php"></i>
+    <i class="fa-brands fa-node-js sticker-icon node"></i>
+    <i class="fa-brands fa-github sticker-icon git"></i>
+    <i class="fa-solid fa-database sticker-icon db"></i>
   </div>
 
-  <!-- Footer -->
-  <footer class="newspaper-footer">
-    <div class="footer-line"></div>
-    <div class="container">
-      <p class="copyright">© 2025 The Portfolio Chronicle. All rights reserved.</p>
-      <p class="attribution">
-        Image credits:
-        <a href="https://www.freepik.com/free-vector/contact-us-icons-sketch_4611203.htm" target="_blank">
-          macrovector_official on Freepik
-        </a>
-      </p>
+  <div class="magazine-wrapper">
+    <!-- Magazine Header -->
+    <header class="mag-header">
+      <div class="badge-wrap">
+        <div class="for-hire">PROJECT SPECIAL</div>
+      </div>
+      <div class="title-wrap">
+        <h1 class="main-title">THE PORTFOLIO CHRONICLE</h1>
+        <div class="edition">VOL. 2025 • ISSUE 001</div>
+      </div>
+      <div class="meta-wrap">
+        <div id="currentDate" class="date-now"></div>
+        <div class="location-now">WORK & INNOVATION</div>
+      </div>
+    </header>
+
+    <div class="mag-grid">
+      <!-- Main Content Block -->
+      <main class="left-content-block">
+        
+        <!-- Work Hero -->
+        <section class="work-hero">
+          <h1 class="mag-headline-large">PORTFOLIO & PROJECTS</h1>
+          <p class="mag-sub-headline">A curated collection of development excellence and digital engineering.</p>
+        </section>
+
+        <!-- Cypher Special Section -->
+        <section class="cypher-mag-section">
+          <div class="cypher-mag-header">
+            <h2 class="cypher-mag-title">DESIGNING THE <span>STANDARD</span> OF 2026.</h2>
+            <p class="cypher-intro-mag">Crafting premium digital experiences that blend aesthetic utility with high-performance engineering.</p>
+          </div>
+
+          <div class="cypher-mag-grid">
+            <article class="cypher-mag-card">
+              <div class="cypher-card-tag">ACTIVE BETA</div>
+              <h3 class="cypher-card-name">NotiBee</h3>
+              <p class="cypher-card-desc">Notification-first social platform for instant connections. Features buzzes and haptic interactions.</p>
+              <div class="cypher-card-image-wrap">
+                <img src="images/notibee.png" alt="NotiBee">
+              </div>
+            </article>
+            <article class="cypher-mag-card">
+              <div class="cypher-card-tag">ACTIVE BETA</div>
+              <h3 class="cypher-card-name">The Fold</h3>
+              <p class="cypher-card-desc">Vintage news aggregator with modern speed. Live weather and classic mental puzzles.</p>
+              <div class="cypher-card-image-wrap">
+                <img src="images/the-fold.jpg" alt="The Fold">
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Editorial Projects -->
+        <section class="projects-editorial">
+          <!-- Project 1: HR Vale -->
+          <div class="project-strip">
+            <div class="project-visual-mag">
+              <img src="images/ess.png" alt="HR Vale">
+            </div>
+            <div class="project-info-mag">
+              <span class="proj-label">MOBILE APP</span>
+              <h2 class="proj-title-mag">HR Vale Mobile</h2>
+              <p class="proj-desc-mag">Comprehensive employee self-service built with Vue.js, Ionic, and TypeScript. Features attendance tracking and leave management.</p>
+              <div class="proj-tech-row">
+                <span class="tech-badge-mag">VUE.JS</span>
+                <span class="tech-badge-mag">IONIC</span>
+                <span class="tech-badge-mag">TYPESCRIPT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Face Scanner -->
+          <div class="project-strip">
+            <div class="project-visual-mag">
+              <img src="images/facescanner.png" alt="Face Scanner">
+            </div>
+            <div class="project-info-mag">
+              <span class="proj-label">BIOMETRIC MODULE</span>
+              <h2 class="proj-title-mag">Face Scanner Attendance</h2>
+              <p class="proj-desc-mag">Specialized biometric system currently in development for Suysing. Rigorous internal testing for future deployment.</p>
+              <div class="proj-tech-row">
+                <span class="tech-badge-mag">ATTENDANCE</span>
+                <span class="tech-badge-mag">BETA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Voucher App -->
+          <div class="project-strip">
+            <div class="project-visual-mag">
+              <img src="images/giftvoucher.png" alt="Voucher App">
+            </div>
+            <div class="project-info-mag">
+              <span class="proj-label">HOSPITALITY TOOL</span>
+              <h2 class="proj-title-mag">WJV Gift Voucher App</h2>
+              <p class="proj-desc-mag">Simplified voucher redemption for WJV Inn hotels. QR code scanning system for guests and front-desk ops.</p>
+              <div class="proj-tech-row">
+                <span class="tech-badge-mag">QR SCAN</span>
+                <span class="tech-badge-mag">MOBILE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: WJV-IMS -->
+          <div class="project-strip">
+            <div class="project-visual-mag">
+              <img src="images/ims.png" alt="WJV IMS">
+            </div>
+            <div class="project-info-mag">
+              <span class="proj-label">INVENTORY SYSTEM</span>
+              <h2 class="proj-title-mag">Inventory Management</h2>
+              <p class="proj-desc-mag">Web application for tracking merchandise, supplies, and hotel assets. Streamlines stock management for multi-faceted operations.</p>
+              <div class="proj-tech-row">
+                <span class="tech-badge-mag">WEB APP</span>
+                <span class="tech-badge-mag">INTERNAL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: E-Freight -->
+          <div class="project-strip">
+            <div class="project-visual-mag">
+              <img src="images/efs.jpg" alt="E-Freight">
+            </div>
+            <div class="project-info-mag">
+              <span class="proj-label">LOGISTICS WEB</span>
+              <h2 class="proj-title-mag">E-Freight Website</h2>
+              <p class="proj-desc-mag">Extensive design overhaul for a professional logistics platform. Enhanced responsiveness and core shipping functionalities.</p>
+              <div class="proj-tech-row">
+                <span class="tech-badge-mag">LOGISTICS</span>
+                <span class="tech-badge-mag">UI OVERHAUL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Rental System -->
+          <div class="project-strip">
+            <div class="project-visual-mag">
+              <img src="images/rentals.png" alt="Rentals">
+            </div>
+            <div class="project-info-mag">
+              <span class="proj-label">ENTERPRISE PYTHON</span>
+              <h2 class="proj-title-mag">Rental Management</h2>
+              <p class="proj-desc-mag">Built with Web2py and Python. Features property listings, tenant management, and comprehensive reporting.</p>
+              <div class="proj-tech-row">
+                <span class="tech-badge-mag">PYTHON</span>
+                <span class="tech-badge-mag">WEB2PY</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Games Showcase Ticker -->
+        <div class="mag-ticker">
+          <div class="ticker-content">
+            <span>SHOWCASING INTERACTIVE EXPERIENCES</span>
+            <span>•</span>
+            <span>GAME DEV SHOWCASE 2025</span>
+            <span>•</span>
+            <span>MADE WITH LOVE & CODE</span>
+            <span>•</span>
+            <span>LEVEL UP YOUR DIGITAL GAME</span>
+            <span>•</span>
+            <span>SHOWCASING INTERACTIVE EXPERIENCES</span>
+          </div>
+        </div>
+
+        <!-- Games Section -->
+        <section class="games-showcase-mag">
+          <div class="mag-section-header">
+            <h2 class="mag-section-title-large">ARCADE & EXHIBITION</h2>
+          </div>
+
+          <div class="games-grid-mag">
+            <article class="game-card-mag">
+              <div class="game-img-wrap">
+                <img src="images/work1.png" alt="RUE">
+              </div>
+              <h3 class="game-title-mag">RUE - Educational Game</h3>
+              <p class="proj-desc-mag">Capstone project demonstrating the application of game principles and educational tech integration.</p>
+            </article>
+            <article class="game-card-mag">
+              <div class="game-img-wrap">
+                <img src="images/work2.png" alt="Space Crusher">
+              </div>
+              <h3 class="game-title-mag">Waki Space Crusher</h3>
+              <p class="proj-desc-mag">Arcade experience developed for the school COTE Festival to showcase talent and BSIT program capabilities.</p>
+            </article>
+            <article class="game-card-mag">
+              <div class="game-img-wrap">
+                <img src="images/sheyken.png" alt="Sheyken">
+              </div>
+              <h3 class="game-title-mag">Sheyken - Scroller</h3>
+              <p class="proj-desc-mag">Vertical scroller extravagance where users hop through skies. Developed for talent showcase exhibition.</p>
+            </article>
+            <article class="game-card-mag">
+              <div class="game-img-wrap">
+                <img src="images/P7QkIb.jpg" alt="Project 2021">
+              </div>
+              <h3 class="game-title-mag">Project 2021 - Legacy</h3>
+              <p class="proj-desc-mag">Personal milestone project developed during the pandemic. A gateway to mobile game development passion.</p>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="side-block">
+        <div class="side-sec">
+          <h3 class="side-label">THE MANIFESTO</h3>
+          <p style="font-size: 0.8rem; line-height: 1.6; font-style: italic;">
+            "Engineering experiences that bridge the gap between human curiosity and technical precision."
+          </p>
+        </div>
+
+        <div class="side-sec">
+          <h3 class="side-label">NAVIGATE</h3>
+          <nav class="nav-cluster">
+            <a href="index.html" class="mag-link">
+              <span class="l-num">01</span>
+              <span class="l-text">FRONT PAGE</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="about.html" class="mag-link">
+              <span class="l-num">02</span>
+              <span class="l-text">THE AUTHOR</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="work.html" class="mag-link">
+              <span class="l-num">03</span>
+              <span class="l-text">PORTFOLIO</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="resume.html" class="mag-link">
+              <span class="l-num">04</span>
+              <span class="l-text">RESUME</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="contact.html" class="mag-link">
+              <span class="l-num">05</span>
+              <span class="l-text">GET IN TOUCH</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </nav>
+        </div>
+
+        <div class="side-sec">
+          <h3 class="side-label">TECH STACK</h3>
+          <div class="tech-mini-grid">
+            <div class="tech-icon-mini" title="Java"><i class="fa-brands fa-java"></i></div>
+            <div class="tech-icon-mini" title="Python"><i class="fa-brands fa-python"></i></div>
+            <div class="tech-icon-mini" title="JS"><i class="fa-brands fa-square-js"></i></div>
+            <div class="tech-icon-mini" title="PHP"><i class="fa-brands fa-php"></i></div>
+            <div class="tech-icon-mini" title="Sass"><i class="fa-brands fa-sass"></i></div>
+            <div class="tech-icon-mini" title="Vue"><i class="fa-brands fa-vuejs"></i></div>
+            <div class="tech-icon-mini" title="React"><i class="fa-brands fa-react"></i></div>
+            <div class="tech-icon-mini" title="SQL"><i class="fas fa-database"></i></div>
+            <div class="tech-icon-mini" title="Godot"><i class="fa-solid fa-gamepad"></i></div>
+          </div>
+        </div>
+
+        <div class="side-sec">
+          <h3 class="side-label">QUICK REACH</h3>
+          <div class="side-contact-list">
+            <a href="mailto:mazi39662@gmail.com" class="side-contact-item"><i class="fa-solid fa-envelope"></i> mazi39662@gmail.com</a>
+            <a href="tel:+639771043990" class="side-contact-item"><i class="fa-solid fa-phone"></i> +639771043990</a>
+            <a href="#" class="side-contact-item"><i class="fa-brands fa-telegram"></i> @W4k1La</a>
+          </div>
+        </div>
+      </aside>
     </div>
-  </footer>
+
+    <!-- Magazine Footer -->
+    <footer class="mag-footer">
+      <div class="footer-chaos">
+        <i class="fa-solid fa-scissors"></i>
+        <div style="border-top: 1px dashed #fff; flex: 1;"></div>
+        <i class="fa-solid fa-barcode"></i>
+      </div>
+      <p class="footer-text">© 2025 THE PORTFOLIO CHRONICLE • EDITION #001</p>
+    </footer>
+  </div>
 
   <script>
-    // Set current date
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const today = new Date();
-    document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
-    document.getElementById('publishDate').textContent = today.toLocaleDateString('en-US', options);
+    // Set current date in Magazine format
+    const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+    const dateText = new Date().toLocaleDateString('en-US', options).toUpperCase();
+    const dateElement = document.getElementById('currentDate');
+    if (dateElement) {
+      dateElement.textContent = dateText;
+    }
   </script>
   <script src="include/main.js"></script>
 </body>

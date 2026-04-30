@@ -5,170 +5,368 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Portfolio Chronicle - Terence Franz Indenerio</title>
+    <title>THE PORTFOLIO MAGAZINE - Terence Franz Indenerio</title>
     <link rel="stylesheet" href="include/index_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400;700&family=Libre+Baskerville:wght@400;700&family=UnifrakturMaguntia&family=Archivo+Black&family=Space+Grotesk:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="include/shared_style.css">
     <script src="https://kit.fontawesome.com/287833829f.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="home-page">
-    <!-- Newspaper Background Texture -->
+<body id="magazine-page">
+    <!-- Extreme High Density Floating Stickers -->
+    <!-- Floating Background Icons -->
+    <div class="floating-stickers">
+        <i class="fa-brands fa-react sticker-icon react"></i>
+        <i class="fa-brands fa-vuejs sticker-icon vue"></i>
+        <i class="fa-brands fa-js sticker-icon js"></i>
+        <i class="fa-brands fa-python sticker-icon python"></i>
+        <i class="fa-brands fa-html5 sticker-icon html"></i>
+        <i class="fa-brands fa-css3-alt sticker-icon css"></i>
+        <i class="fa-brands fa-php sticker-icon php"></i>
+        <i class="fa-brands fa-node-js sticker-icon node"></i>
+        <i class="fa-brands fa-github sticker-icon git"></i>
+        <i class="fa-solid fa-database sticker-icon db"></i>
+    </div>
 
 
-    <!-- Main Container -->
-    <div class="landing-container container">
-
-        <!-- Header Masthead -->
-        <!-- Newspaper Header -->
-        <header class="newspaper-header">
-            <div class="header-top">
-                <div class="edition-info">Vol. 2025 • Issue #001</div>
-                <div class="date-info" id="currentDate"></div>
+    <div class="magazine-wrapper">
+        
+        <!-- Top Bar / Header -->
+        <header class="mag-header">
+            <div class="badge-wrap">
+                <div class="for-hire">FOR HIRE</div>
             </div>
-            <div class="masthead">
-                <h1 class="newspaper-title">THE PORTFOLIO CHRONICLE</h1>
-                <p class="tagline">The Daily Record of Digital Innovation</p>
+            <div class="title-wrap">
+                <h1 class="main-title">THE PORTFOLIO CHRONICLE</h1>
+                <div class="edition">VOL. 2025 • ISSUE 001</div>
             </div>
-
-            <div class="header-line"></div>
+            <div class="meta-wrap">
+                <div id="currentDate" class="date-now"></div>
+                <div class="location-now">METRO MANILA, PH</div>
+            </div>
         </header>
 
-        <!-- Hero Content -->
-        <main class="hero-content">
-            <div class="content-grid">
-
-                <!-- Left Column - Headlines -->
-                <div class="headlines-section">
-                    <div class="breaking-banner">
-                        <span class="breaking-text">BREAKING NEWS</span>
+        <!-- The "Chaos" Grid -->
+        <main class="mag-grid">
+            
+            <!-- Hero Section -->
+            <section class="hero-block">
+                <div class="hero-header-row">
+                    <div class="hi-box">
+                        <h2 class="hi-text">Hi,</h2>
+                        <div class="hi-sub">MY NAME IS <span>TERENCE FRANZ</span></div>
                     </div>
-
-                    <h2 class="main-headline">
-                        Software Engineer<br>
-                        <span class="headline-accent">Ready to Build</span><br>
-                        Your Next Project
-                    </h2>
-
-                    <div class="byline">
-                        <span class="byline-text">By Terence Franz Indenerio</span>
-                        <span class="separator">|</span>
-                        <span class="byline-date" id="publishDate"></span>
-                    </div>
-
-                    <p class="lead-paragraph">
-                        Specializing in Mobile App Development, Web Solutions, and Game Development.
-                        Bringing creative ideas to life through elegant code and innovative design.
-                    </p>
-
-                    <!-- Navigation Links as Article Headlines -->
-                    <nav class="article-links">
-                        <a href="about.html" class="article-link">
-                            <div class="link-icon">
-                                <i class="fa-solid fa-user"></i>
-                            </div>
-                            <div class="link-content">
-                                <h3>About the Developer</h3>
-                                <p>Learn more about my journey and expertise</p>
-                            </div>
-                            <div class="link-arrow">→</div>
-                        </a>
-
-                        <a href="work.html" class="article-link">
-                            <div class="link-icon">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                            <div class="link-content">
-                                <h3>Portfolio & Projects</h3>
-                                <p>Explore my latest work and achievements</p>
-                            </div>
-                            <div class="link-arrow">→</div>
-                        </a>
-
-                        <a href="contact.html" class="article-link">
-                            <div class="link-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="link-content">
-                                <h3>Get In Touch</h3>
-                                <p>Let's discuss your next project</p>
-                            </div>
-                            <div class="link-arrow">→</div>
-                        </a>
-
-                        <a href="resume.html" class="article-link">
-                            <div class="link-icon">
-                                <i class="fa-solid fa-file-lines"></i>
-                            </div>
-                            <div class="link-content">
-                                <h3>Professional Resume</h3>
-                                <p>View my complete professional profile</p>
-                            </div>
-                            <div class="link-arrow">→</div>
-                        </a>
-                    </nav>
-                </div>
-
-                <!-- Right Column - Featured Image -->
-                <div class="featured-section">
-                    <div class="featured-image-container">
-                        <div class="image-frame">
-                            <img src="images/image_2.png" alt="Terence Franz Indenerio" class="profile-image">
-                            <div class="image-caption">
-                                <p class="caption-text">Terence Franz Indenerio</p>
-                                <p class="caption-subtitle">Software Engineer</p>
-                            </div>
+                    
+                    <div class="expertise-list-top">
+                        <div class="exp-header">CORE SERVICES</div>
+                        <div class="exp-grid">
+                            <div class="exp-item"><i class="fa-solid fa-mobile-screen"></i> MOBILE APPS</div>
+                            <div class="exp-item"><i class="fa-solid fa-globe"></i> WEB SOLUTIONS</div>
+                            <div class="exp-item"><i class="fa-solid fa-gamepad"></i> GAME DEV</div>
+                            <div class="exp-item"><i class="fa-solid fa-code-branch"></i> BACKEND SYSTEMS</div>
                         </div>
                     </div>
 
-                    <!-- Quick Stats Box -->
-                    <div class="stats-box">
-                        <h3 class="stats-title">At a Glance</h3>
-                        <div class="stats-grid">
-                            <div class="stat-item">
-                                <i class="fa-solid fa-code"></i>
-                                <span class="stat-label">Multiple Languages</span>
+                    <div class="side-stat-box">
+                        <div class="hobbies-sticker">
+                            <span>PAINTING</span>
+                            <span>CODING</span>
+                            <span>CODM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-main">
+                    <div class="image-stack">
+                        <div class="img-frame frame-1">
+                            <img src="images/9.png" alt="Terence Franz" class="hero-img">
+                            <div class="img-caption">TERENCE FRANZ INDENERIO // ENGINEER</div>
+                        </div>
+                        <div class="decorative-box"></div>
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            AVAILABLE FOR PROJECTS
+                        </div>
+                    </div>
+                    
+                    <div class="hero-content-wrap">
+                        <div class="quick-bio">
+                            <p class="bio-text">
+                                A versatility-driven developer bridging the gap between design and high-performance code. 
+                                I specialize in crafting seamless user experiences across mobile and web platforms.
+                            </p>
+                            <div class="mini-stats">
+                                <div class="m-stat"><strong>20+</strong> Projects</div>
+                                <div class="m-stat"><strong>10+</strong> Tech Stack</div>
+                                <div class="m-stat"><strong>100%</strong> Passion</div>
                             </div>
-                            <div class="stat-item">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                <span class="stat-label">Mobile Apps</span>
-                            </div>
-                            <div class="stat-item">
-                                <i class="fa-solid fa-globe"></i>
-                                <span class="stat-label">Web Solutions</span>
-                            </div>
-                            <div class="stat-item">
-                                <i class="fa-solid fa-gamepad"></i>
-                                <span class="stat-label">Game Development</span>
+                        </div>
+
+                        <div class="hero-statement">
+                            <p class="statement-text">
+                                A <span class="accent-hint">Software Engineer</span> with a talent for problem-solving 
+                                and a passion for turning complex ideas into functional realities.
+                            </p>
+                            <div class="statement-arrow">
+                                <div class="arrow-wrap">
+                                    <i class="fa-solid fa-arrow-turn-down"></i>
+                                    <span>CHECK MY WORK BELOW</span>
+                                </div>
+                                <div class="currently-sticker">
+                                    <span>CURRENTLY CODING:</span>
+                                    <strong>AI INTEGRATIONS</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Massive Typographic Element (Absolute Positioned) -->
+                <div class="massive-display-text">
+                    VERSA<span>TILITY</span>
+                </div>
+            </section>
 
-            </div>
+            <!-- Manifesto Sidebar -->
+            <aside class="side-block">
+                <div class="manifesto-wrap">
+                    <h3 class="sec-label">MANIFESTO</h3>
+                    <div class="cool-phil">
+                        <span class="phil-big">Architecture in Logic,</span>
+                        <span class="phil-alt">Art in <span class="gothic">Motion</span>.</span>
+                        <p class="phil-small">I build digital worlds where code meets creativity.</p>
+                    </div>
+                </div>
+
+                <nav class="nav-cluster">
+                    <a href="index.html" class="mag-link">
+                        <span class="l-num">01</span>
+                        <span class="l-text">FRONT PAGE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="about.html" class="mag-link">
+                        <span class="l-num">02</span>
+                        <span class="l-text">THE AUTHOR</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="work.html" class="mag-link">
+                        <span class="l-num">03</span>
+                        <span class="l-text">PORTFOLIO</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="resume.html" class="mag-link">
+                        <span class="l-num">04</span>
+                        <span class="l-text">RESUME</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="contact.html" class="mag-link">
+                        <span class="l-num">05</span>
+                        <span class="l-text">GET IN TOUCH</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </nav>
+
+                <div class="sidebar-socials-only">
+                    <a href="https://github.com/franz-terence" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/franzindenerio" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com/Franz.Ocubillo" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/waki_w4k1" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <div class="sidebar-skills-sticker">
+                    <span class="s-label">TECHNICAL STRENGTHS:</span>
+                    <div class="s-tags">
+                        <span>API's</span> <span>UI/UX</span> <span>LOGIC</span> <span>ARCHITECTURE</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Experience Tape -->
+            <section class="experience-ticker">
+                <div class="ticker-content">
+                    <span>SOFTWARE ENGINEER @ BAPPLWARE</span>
+                    <span>IT PROGRAMMER @ WJV</span>
+                    <span>WEB DEVELOPER @ E-FREIGHT</span>
+                    <span>SOFTWARE ENGINEER @ BAPPLWARE</span>
+                    <span>IT PROGRAMMER @ WJV</span>
+                    <span>WEB DEVELOPER @ E-FREIGHT</span>
+                </div>
+            </section>
+
+            <!-- Bottom Content: Education & Stats -->
+            <section class="edu-block">
+                <div class="edu-header-wrap">
+                    <h4 class="sec-label">EDUCATION</h4>
+                    <!-- Tech Icons for Roadmap -->
+                    <div class="edu-tech-icons">
+                        <i class="fa-brands fa-html5" title="HTML5"></i>
+                        <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                        <i class="fa-brands fa-js" title="JavaScript"></i>
+                        <i class="fa-brands fa-php" title="PHP"></i>
+                        <i class="fa-solid fa-database" title="MySQL"></i>
+                    </div>
+                </div>
+                <div class="edu-details">
+                    <span class="edu-grad">GRAD '23</span>
+                    <div class="edu-inst">
+                        <p class="inst-name">PALOMPON INSTITUTE OF TECHNOLOGY</p>
+                        <p class="inst-degree">BS IN INFORMATION TECHNOLOGY</p>
+                    </div>
+                </div>
+                <div class="edu-extra">
+                    <span>TOP OF CLASS</span>
+                    <span>IT ENTHUSIAST</span>
+                    <span>CODE CRAFTSMAN</span>
+                </div>
+            </section>
+
+            <section class="tech-block">
+                <h4 class="sec-label">STACK</h4>
+                <div class="stack-center-wrap">
+                    <div class="icon-grid">
+                        <i class="fa-brands fa-vuejs" title="Vue.js"></i>
+                        <i class="fa-brands fa-node-js" title="Node.js"></i>
+                        <i class="fa-brands fa-php" title="PHP"></i>
+                        <i class="fa-brands fa-python" title="Python"></i>
+                        <i class="fa-solid fa-database" title="MySQL"></i>
+                        <i class="fa-brands fa-figma" title="Figma"></i>
+                    </div>
+                </div>
+                <div class="and-more-text">AND MORE...</div>
+                <div class="tech-label-tape">FULL-STACK READY</div>
+            </section>
+
+            <section class="achieve-block">
+                <div class="ach-flex-wrap">
+                    <div class="ach-main">
+                        <span class="ach-label">RECENT ACHIEVEMENTS</span>
+                        <ul class="ach-list">
+                            <li>COTE FESTIVAL SHOWCASE</li>
+                            <li>PROGRAMMING COMPETITION</li>
+                            <li>GUEST SPEAKER AS IT</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dynamic-projects-box">
+                        <span class="ach-label">FEATURED PROJECTS</span>
+                        <div id="project-display" class="project-display">
+                            <!-- Swapped via JS -->
+                        </div>
+                    </div>
+
+                    <div class="contact-mini-block">
+                        <span class="ach-label">LET'S CONNECT</span>
+                        <div class="contact-links">
+                            <a href="mailto:mazi39662@gmail.com">MAZI39662@GMAIL.COM</a>
+                            <a href="tel:+639771043990">+63 977 104 3990</a>
+                        </div>
+                        <div class="qr-placeholder">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span>SCAN ME</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-chaos">
+                    <span class="sciz">✂</span>
+                    <div class="dashed"></div>
+                </div>
+            </section>
+
         </main>
 
-        <!-- Footer -->
-        <footer class="landing-footer">
-            <div class="footer-line"></div>
-            <p class="footer-text">© 2025 The Portfolio Chronicle. All Rights Reserved.</p>
+        <footer class="mag-footer">
+            <div class="f-left">THE PORTFOLIO CHRONICLE // 2025</div>
+            <div class="f-mid">W4K1</div>
+            <div class="f-right">PAGE 01</div>
         </footer>
 
     </div>
 
     <script>
-        // Set current date
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        const today = new Date();
-        document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
-        document.getElementById('publishDate').textContent = today.toLocaleDateString('en-US', options);
-    </script>
+        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', options).toUpperCase();
 
-    <!-- Page Flip Animation -->
+        // Dynamic Project Swapping
+        const projectPool = [
+            "Checklist System", "Rental Management", "Ukay-ukay App",
+            "Inventory System", "E-Freight Web", "Mobile Game Port",
+            "API Integration", "Figma Design UI", "Python Scraper"
+        ];
+        
+        let currentGroup = 0;
+        const display = document.getElementById('project-display');
+
+        function updateProjects() {
+            const start = currentGroup * 3;
+            const items = projectPool.slice(start, start + 3);
+            
+            display.style.opacity = 0;
+            setTimeout(() => {
+                display.innerHTML = items.map(p => `<span class="project-tag">${p}</span>`).join('');
+                display.style.opacity = 1;
+            }, 300);
+
+            currentGroup = (currentGroup + 1) % (projectPool.length / 3);
+        }
+
+        updateProjects();
+        setInterval(updateProjects, 2000);
+
+        // Draggable Stickers Logic with Boundaries & Random Placement
+        const stickers = document.querySelectorAll('.edu-tech-icons i');
+        const container = document.querySelector('.edu-tech-icons');
+
+        // Initial Random Placement
+        stickers.forEach(sticker => {
+            const maxX = container.clientWidth - sticker.clientWidth;
+            const maxY = container.clientHeight - sticker.clientHeight;
+            sticker.style.left = Math.random() * maxX + 'px';
+            sticker.style.top = Math.random() * maxY + 'px';
+        });
+
+        stickers.forEach(sticker => {
+            let isDragging = false;
+            let startX, startY, initialLeft, initialTop;
+
+            sticker.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                initialLeft = sticker.offsetLeft;
+                initialTop = sticker.offsetTop;
+                sticker.style.zIndex = 1000;
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                
+                let newLeft = initialLeft + (e.clientX - startX);
+                let newTop = initialTop + (e.clientY - startY);
+
+                // Boundary Checks
+                const maxX = container.clientWidth - sticker.clientWidth;
+                const maxY = container.clientHeight - sticker.clientHeight;
+
+                newLeft = Math.max(0, Math.min(newLeft, maxX));
+                newTop = Math.max(0, Math.min(newTop, maxY));
+
+                sticker.style.left = newLeft + 'px';
+                sticker.style.top = newTop + 'px';
+                sticker.style.right = 'auto';
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+        });
+
+
+    </script>
     <script src="include/main.js"></script>
 </body>
 
