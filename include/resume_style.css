@@ -99,10 +99,11 @@ body#resume-page {
 .tool-logo-item {
     display: flex; flex-direction: column; align-items: center; gap: 8px; width: 80px; transition: 0.3s;
 }
-.tool-logo-item i { font-size: 2rem; color: #333; }
+.tool-logo-item i, .tool-logo-item svg { font-size: 2rem; width: 2rem; height: 2rem; fill: #333; color: #333; transition: 0.3s; }
 .tool-logo-item span { font-family: var(--font-heading); font-size: 0.5rem; letter-spacing: 1px; opacity: 0.6; }
 .tool-logo-item:hover { transform: scale(1.1); }
 .tool-logo-item:hover i { color: var(--accent); }
+.tool-logo-item:hover svg { fill: var(--accent); }
 
 
 /* Left Content */

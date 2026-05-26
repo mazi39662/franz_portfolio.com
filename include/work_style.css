@@ -120,7 +120,19 @@ body#work-page {
 
 .proj-tech-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; border-top: var(--border-thin); padding-top: 20px; }
 .tech-badge-mag { font-family: var(--font-heading); font-size: 0.65rem; border: var(--border-thin); padding: 4px 10px; background: #fff; transition: 0.2s; }
+.tech-badge-mag.live-demo-link {
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    border-color: var(--accent);
+}
 .project-strip:hover .tech-badge-mag { background: #000; color: #fff; }
+.project-strip:hover .tech-badge-mag.live-demo-link { background: var(--accent); color: #fff; border-color: var(--accent); }
+.tech-badge-mag.live-demo-link:hover { background: #000 !important; color: #fff !important; border-color: #000 !important; }
 
 /* Game Dev Showcase (Grid Layout) */
 .games-showcase-mag { padding: 60px 40px; border-bottom: var(--border); background: #fdfdfd; }
